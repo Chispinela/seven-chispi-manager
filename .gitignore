@@ -1,0 +1,15 @@
+node_modules/
+output/
+app-data/
+runtime-test/
+Servidores/
+inspection/
+tools/steamcmd/
+tools/steamcmd.zip
+electron-debug.log
+docs/*stdout.log
+docs/*stderr.log
+docs/runtime-console.txt
+*.tmp
+
+.qa*/

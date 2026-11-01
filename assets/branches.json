@@ -1,0 +1,105 @@
+{
+  "at": "2026-10-31T19:44:52.542Z",
+  "branches": [
+    {
+      "id": "public",
+      "label": "public",
+      "buildId": "26237934"
+    },
+    {
+      "id": "v3.4.0",
+      "label": "Version 3.4.0 Stable",
+      "buildId": "26237934"
+    },
+    {
+      "id": "v3.3.0",
+      "label": "Version 3.3.0 Stable",
+      "buildId": "25661908"
+    },
+    {
+      "id": "v3.2.0",
+      "label": "Version 3.2.0 Stable",
+      "buildId": "24994542"
+    },
+    {
+      "id": "v2.6",
+      "label": "Version 2.6 Stable",
+      "buildId": "22422094"
+    },
+    {
+      "id": "v1.4",
+      "label": "Version 1.4 Stable",
+      "buildId": "17990043"
+    },
+    {
+      "id": "alpha21.2",
+      "label": "Alpha 21.2 Stable",
+      "buildId": "12966454"
+    },
+    {
+      "id": "alpha20.7",
+      "label": "Alpha 20.7 Stable",
+      "buildId": "10740013"
+    },
+    {
+      "id": "alpha19.6",
+      "label": "Alpha 19.6 Stable",
+      "buildId": "7108526"
+    },
+    {
+      "id": "alpha18.4",
+      "label": "Alpha 18.4 Stable",
+      "buildId": "4714812"
+    },
+    {
+      "id": "alpha17.4",
+      "label": "Alpha 17.4 Stable",
+      "buildId": "3848769"
+    },
+    {
+      "id": "alpha16.4",
+      "label": "Alpha 16.4 Stable",
+      "buildId": "2222523"
+    },
+    {
+      "id": "alpha15.2",
+      "label": "Alpha 15.2 Stable",
+      "buildId": "1642899"
+    },
+    {
+      "id": "alpha14.7",
+      "label": "Alpha 14.7 Stable",
+      "buildId": "1189196"
+    },
+    {
+      "id": "alpha13.8",
+      "label": "Alpha 13.8 Stable",
+      "buildId": "963565"
+    },
+    {
+      "id": "alpha12.5",
+      "label": "Alpha 12.5 Stable",
+      "buildId": "745252"
+    },
+    {
+      "id": "alpha11.6",
+      "label": "Alpha 11.6 Stable",
+      "buildId": "658147"
+    },
+    {
+      "id": "alpha10.4",
+      "label": "Alpha 10.4 Stable",
+      "buildId": "480993"
+    },
+    {
+      "id": "alpha9.3",
+      "label": "Alpha 9.3 Stable",
+      "buildId": "385244"
+    },
+    {
+      "id": "alpha8.8",
+      "label": "Alpha 8.8 Stable",
+      "buildId": "334790"
+    }
+  ]
+}

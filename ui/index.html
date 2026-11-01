@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; frame-src 'none'"
+    />
+    <title>Seven Chispi Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="titlebar">
+      <span>SEVEN <b>CHISPI MANAGER</b></span>
+      <div>
+        <button data-window="minimize" aria-label="Minimize">−</button
+        ><button data-window="maximize" aria-label="Maximize">□</button
+        ><button data-window="close" aria-label="Close">×</button>
+      </div>
+    </div>
+    <div id="splash">
+      <div class="splash-orbit"></div>
+      <img src="../assets/logo.png" alt="Seven logo" />
+      <h1>SEVEN</h1>
+      <p>CHISPI MANAGER</p>
+      <div class="loading"><i></i></div>
+      <small id="loading-text">Preparando tu próximo mundo…</small>
+    </div>
+    <div id="app">
+      <aside>
+        <div class="brand">
+          <img src="../assets/logo.png" alt="" />
+          <div><strong>SEVEN</strong><small>CHISPI MANAGER</small></div>
+        </div>
+        <div class="side-label" data-t="workspace"></div>
+        <nav id="nav"></nav>
+        <div id="server-list"></div>
+        <div class="side-bottom">
+          <button id="theme-toggle"></button
+          ><button id="preferences-btn"></button>
+          <div class="version">7 DAYS TO DIE <span>1.0.4</span></div>
+        </div>
+      </aside>
+      <div class="workspace">
+        <header>
+          <div id="breadcrumb"></div>
+          <div class="header-right">
+            <span class="local-badge" id="local-badge"></span
+            ><select id="server-switch" aria-label="Servers"></select
+            ><select id="language" aria-label="Language">
+              <option value="es">Español</option>
+              <option value="en">English</option>
+              <option value="pt">Português</option>
+              <option value="zh">中文</option>
+              <option value="ja">日本語</option>
+              <option value="ru">Русский</option></select
+            ><button id="add-top" class="primary"></button>
+          </div>
+        </header>
+        <main id="content"></main>
+        <footer>
+          <span><i class="status-dot"></i> Seven Chispi Manager</span
+          ><span id="footer-info"></span>
+        </footer>
+      </div>
+    </div>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="modal">
+      <form id="modal-form">
+        <div id="modal-head"></div>
+        <div id="modal-body"></div>
+        <div id="modal-actions"></div>
+      </form>
+    </dialog>
+    <script src="i18n.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+
