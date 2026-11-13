@@ -248,3 +248,49 @@ test("automatic schedule computes daily local time and advances once jobs", asyn
     instant,
   );
 });
+
+test("updates only the selected installation and discovers its version and maps", async (t) => {
+  const { root, store, m } = await fixture(t);
+  const first = await m.newServer({
+    name: "First",
+    directory: path.join(root, "first"),
+  });
+  const second = await m.newServer({
+    name: "Second",
+    directory: path.join(root, "second"),
+  });
+  const map = path.join(second.directory, "Data", "Worlds", "Pregen08k01");
+  await fs.mkdir(map, { recursive: true });
+  await fs.writeFile(path.join(map, "map_info.xml"), "<MapInfo/>");
+  const stock = C.buildConfig({ SandboxCode: "A", NewGameSetting: "20" });
+  m.runSteam = async (args, id) => {
+    assert.equal(id, second.id);
+    assert.equal(
+      args[args.indexOf("+force_install_dir") + 1],
+      second.directory,
+    );
+    await fs.writeFile(path.join(second.directory, "7DaysToDieServer.exe"), "");
+    await fs.writeFile(path.join(second.directory, "serverconfig.xml"), stock);
+    await fs.mkdir(path.join(second.directory, "steamapps"));
+    await fs.writeFile(
+      path.join(second.directory, "steamapps", "appmanifest_294420.acf"),
+      '"AppState" { "buildid" "26237934" }',
+    );
+    return "Success! App '294420' fully installed.";
+  };
+  second.config.ZombieMove = "4";
+  await m.install(second.id);
+  const info = await m.configInfo(second.id);
+  assert.equal(info.version, "3.4.0");
+  assert.equal(info.options.length, 165);
+  assert.equal(info.values.NewGameSetting, "20");
+  assert.equal(info.values.ZombieMove, undefined);
+  assert.ok(info.worlds.includes("Pregen08k01"));
+  assert.ok(!(await m.configInfo(first.id)).worlds.includes("Pregen08k01"));
+  assert.equal(await C.exists(m.configFile(first)), false);
+  assert.equal(
+    C.parseConfig(await fs.readFile(m.configFile(second), "utf8")).ZombieMove,
+    undefined,
+  );
+  assert.equal(store.state.servers[0].config.SandboxCode, undefined);
+});

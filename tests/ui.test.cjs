@@ -6,7 +6,7 @@ const { JSDOM } = require("jsdom");
 const C = require("../src/core.cjs");
 const { triggers } = require("../src/automation.cjs");
 const tick = () => new Promise((r) => setTimeout(r, 15));
-async function view(t) {
+async function view(t, gameOptions = {}) {
   const root = path.resolve(__dirname, ".."),
     s = C.defaultServer(path.join(root, "test-data"));
   s.name = "Test server";
@@ -67,6 +67,7 @@ async function view(t) {
             comments: {},
             installed: true,
             sandbox: true,
+            ...gameOptions,
           };
           break;
         case "mods":
@@ -81,7 +82,10 @@ async function view(t) {
           value = true;
           break;
         case "saveServer":
-          snapshot.servers[0] = args.server;
+          const index = snapshot.servers.findIndex(
+            (server) => server.id === args.server.id,
+          );
+          snapshot.servers[index] = args.server;
           listeners.change(snapshot);
           value = args.server;
           break;
@@ -286,4 +290,31 @@ test("delete controls are disabled while a server is active", async (t) => {
     w.document.querySelector(".page-head [data-action=removeServer]").disabled,
     true,
   );
+});
+
+test("Sandbox controls save a code without losing other rules and the world picker saves the exact map", async (t) => {
+  const { w, calls, click } = await view(t, {
+    options: require("../assets/sandbox-options.json").versions["3.2.0"],
+    worlds: ["Navezgane", "RWG", "Pregen08k01"],
+  });
+  await click("[data-open]");
+  await click('[data-nav="config"]');
+  await click("[data-tab=advanced]");
+  const set = (selector, value, event) => {
+    const field = w.document.querySelector(selector);
+    assert.ok(field, selector);
+    field.value = value;
+    field.dispatchEvent(new w.Event(event, { bubbles: true }));
+  };
+  set("#native-SandboxCode", "AAAJZZB", "input");
+  set("#sandbox-BI", "E", "change");
+  set("#world-picker", "Pregen08k01", "change");
+  w.document
+    .querySelector("#native-form")
+    .dispatchEvent(new w.Event("submit", { bubbles: true, cancelable: true }));
+  await tick();
+  const saved = calls.findLast(({ action }) => action === "saveServer").args
+    .server.config;
+  assert.equal(saved.SandboxCode, "AAAJBIEZZB");
+  assert.equal(saved.GameWorld, "Pregen08k01");
 });

@@ -104,6 +104,22 @@ let state = {
 let transient = {};
 const collectionKey = () =>
   page === "teleports" && transient.areas ? "areas" : page;
+function updateButton(server, runtime, small = false) {
+  if (server.mode !== "local") return "";
+  const disabled =
+    runtime.busy ||
+    runtime.connected ||
+    runtime.countdown ||
+    ["running", "starting", "stopping"].includes(runtime.status);
+  return ibutton(
+    "install",
+    "install",
+    "download",
+    small ? "small ghost" : "",
+    `data-id="${esc(server.id)}" ${disabled ? 'disabled title="' + esc(t("stopFirst")) + '"' : ""}`,
+  );
+}
+
 const deleteButton = (serverId, rt, compact = false) => {
   const blocked =
     !!rt.busy ||
@@ -269,7 +285,7 @@ async function render() {
       html += `<div class="server-grid">${state.servers
         .map((s) => {
           const rt = state.runtime[s.id] || {};
-          return `<article class="server-card"><div class="card-banner">${icon("servers")}${statusBadge(rt)}</div><div class="card-body"><h3>${esc(s.name)}</h3><div class="branch">${esc(s.branch)} · ${t(s.mode).toUpperCase()}</div><div class="server-facts"><div><small>${t("world")}</small><span>${esc(s.config.GameWorld)}</span></div><div><small>${t("players")}</small><span>${rt.players?.length || 0} / ${esc(s.config.ServerMaxPlayerCount)}</span></div><div><small>${t("gamePort")}</small><span>${esc(s.config.ServerPort)}</span></div><div><small>${t("console")}</small><span>${t(rt.connected ? "connected" : "disconnected")}</span></div></div></div><div class="card-footer"><button data-open="${s.id}" class="ghost small">${t("manage")}${icon("arrow")}</button><button class="primary small" data-action="${["running", "starting", "stopping"].includes(rt.status) ? "serverStop" : "serverStart"}" data-id="${s.id}" ${rt.busy ? "disabled" : ""}>${icon(["running", "starting", "stopping"].includes(rt.status) ? "stop" : "play")}${t(["running", "starting", "stopping"].includes(rt.status) ? "stop" : "start")}</button>${deleteButton(s.id, rt, true)}</div></article>`;
+          return `<article class="server-card"><div class="card-banner">${icon("servers")}${statusBadge(rt)}</div><div class="card-body"><h3>${esc(s.name)}</h3><div class="branch">${esc(s.branch)} · ${t(s.mode).toUpperCase()}</div><div class="server-facts"><div><small>${t("world")}</small><span>${esc(s.config.GameWorld)}</span></div><div><small>${t("players")}</small><span>${rt.players?.length || 0} / ${esc(s.config.ServerMaxPlayerCount)}</span></div><div><small>${t("gamePort")}</small><span>${esc(s.config.ServerPort)}</span></div><div><small>${t("console")}</small><span>${t(rt.connected ? "connected" : "disconnected")}</span></div></div></div><div class="card-footer"><button data-open="${s.id}" class="ghost small">${t("manage")}${icon("arrow")}</button><button class="primary small" data-action="${["running", "starting", "stopping"].includes(rt.status) ? "serverStop" : "serverStart"}" data-id="${s.id}" ${rt.busy ? "disabled" : ""}>${icon(["running", "starting", "stopping"].includes(rt.status) ? "stop" : "play")}${t(["running", "starting", "stopping"].includes(rt.status) ? "stop" : "start")}</button>${updateButton(s, rt, true)}${deleteButton(s.id, rt, true)}</div></article>`;
         })
         .join("")}</div>`;
   } else if (page === "dashboard") {
@@ -278,7 +294,7 @@ async function render() {
         " " +
         t("minutes")
       : "—";
-    html = `<div class="page-head"><div><div class="toolbar" style="margin-bottom:10px">${statusBadge(r)}<span class="badge purple">${esc(s.branch)}</span></div><h1>${esc(s.name)}</h1><p>${esc(s.config.GameWorld)} · ${esc(s.host)}:${esc(s.config.ServerPort)} · ${t(s.mode)}</p></div><div class="toolbar">${ibutton(["running", "starting", "stopping"].includes(r.status) ? "stop" : "start", ["running", "starting", "stopping"].includes(r.status) ? "serverStop" : "serverStart", ["running", "starting", "stopping"].includes(r.status) ? "stop" : "play", "primary")}${ibutton("restart", "restart", "refresh")}${deleteButton(s.id, r)}</div></div>${r.busy ? `<div class="busy-bar"><i class="spinner"></i>${t(r.busy === "install" ? "install" : r.busy === "backup" ? "backups" : r.busy === "mod" ? "mods" : r.busy === "removeServer" ? "deleteServer" : r.busy)}</div>` : ""}${r.countdown ? `<div class="busy-bar">${icon("clock")}${t("countdown")} · ${new Date(r.countdown).toLocaleTimeString()}${button("cancelCountdown", "cancelCountdown", "small")}</div>` : ""}<div class="stats">${stat("players", (r.players?.length || 0) + " / " + s.config.ServerMaxPlayerCount, "players", "", true)}${stat("uptime", elapsed, "clock", "", true)}${stat("memory", r.metrics?.ramMb != null ? r.metrics.ramMb + " MB" : "—", "servers", "", true)}${stat("cpu", r.metrics?.cpu != null ? r.metrics.cpu + " %" : "—", "events", "", true)}</div><div class="two-col"><section class="panel"><h2>${t("activity")}</h2><div id="activity" class="activity-list">${activityHtml()}</div></section><section><div class="panel"><h2>${t("quickActions")}</h2><div class="action-grid">${ibutton("config", "goConfig", "config")}${ibutton("console", "goConsole", "console")}${ibutton("mods", "goMods", "mods")}${ibutton("backupNow", "backup", "backups")}${ibutton(r.connected ? "disconnect" : "connect", r.connected ? "disconnect" : "connect", "integrations")}${ibutton("copyAddress", "copyAddress", "copy")}${ibutton("openFolder", "openFolder", "folder")}${ibutton("install", "install", "download")}</div></div><div class="panel"><h2>${t("config")}</h2><div class="readonly-row"><span>${t("gameTime")}</span><b>${esc(r.metrics?.gameTime || "—")}</b></div><div class="readonly-row"><span>${t("console")}</span><b>${t(r.connected ? "connected" : "disconnected")}</b></div><div class="readonly-row"><span>${t("version")}</span><b>${esc(s.branch)}</b></div><div class="readonly-row"><span>${t("worldName")}</span><b>${esc(s.config.GameName)}</b></div><div class="readonly-row"><span>${t("maxPlayers")}</span><b>${esc(s.config.ServerMaxPlayerCount)}</b></div><div class="readonly-row"><span>${t("telnetPort")}</span><b>${esc(s.config.TelnetPort)}</b></div></div></section></div>`;
+    html = `<div class="page-head"><div><div class="toolbar" style="margin-bottom:10px">${statusBadge(r)}<span class="badge purple">${esc(s.branch)}</span></div><h1>${esc(s.name)}</h1><p>${esc(s.config.GameWorld)} · ${esc(s.host)}:${esc(s.config.ServerPort)} · ${t(s.mode)}</p></div><div class="toolbar">${ibutton(["running", "starting", "stopping"].includes(r.status) ? "stop" : "start", ["running", "starting", "stopping"].includes(r.status) ? "serverStop" : "serverStart", ["running", "starting", "stopping"].includes(r.status) ? "stop" : "play", "primary")}${ibutton("restart", "restart", "refresh")}${deleteButton(s.id, r)}</div></div>${r.busy ? `<div class="busy-bar"><i class="spinner"></i>${t(r.busy === "install" ? "install" : r.busy === "backup" ? "backups" : r.busy === "mod" ? "mods" : r.busy === "removeServer" ? "deleteServer" : r.busy)}</div>` : ""}${r.countdown ? `<div class="busy-bar">${icon("clock")}${t("countdown")} · ${new Date(r.countdown).toLocaleTimeString()}${button("cancelCountdown", "cancelCountdown", "small")}</div>` : ""}<div class="stats">${stat("players", (r.players?.length || 0) + " / " + s.config.ServerMaxPlayerCount, "players", "", true)}${stat("uptime", elapsed, "clock", "", true)}${stat("memory", r.metrics?.ramMb != null ? r.metrics.ramMb + " MB" : "—", "servers", "", true)}${stat("cpu", r.metrics?.cpu != null ? r.metrics.cpu + " %" : "—", "events", "", true)}</div><div class="two-col"><section class="panel"><h2>${t("activity")}</h2><div id="activity" class="activity-list">${activityHtml()}</div></section><section><div class="panel"><h2>${t("quickActions")}</h2><div class="action-grid">${ibutton("config", "goConfig", "config")}${ibutton("console", "goConsole", "console")}${ibutton("mods", "goMods", "mods")}${ibutton("backupNow", "backup", "backups")}${ibutton(r.connected ? "disconnect" : "connect", r.connected ? "disconnect" : "connect", "integrations")}${ibutton("copyAddress", "copyAddress", "copy")}${ibutton("openFolder", "openFolder", "folder")}${updateButton(s, r)}</div></div><div class="panel"><h2>${t("config")}</h2><div class="readonly-row"><span>${t("gameTime")}</span><b>${esc(r.metrics?.gameTime || "—")}</b></div><div class="readonly-row"><span>${t("console")}</span><b>${t(r.connected ? "connected" : "disconnected")}</b></div><div class="readonly-row"><span>${t("version")}</span><b>${esc(s.branch)}</b></div><div class="readonly-row"><span>${t("worldName")}</span><b>${esc(s.config.GameName)}</b></div><div class="readonly-row"><span>${t("maxPlayers")}</span><b>${esc(s.config.ServerMaxPlayerCount)}</b></div><div class="readonly-row"><span>${t("telnetPort")}</span><b>${esc(s.config.TelnetPort)}</b></div></div></section></div>`;
   } else if (page === "config") {
     html =
       pageHead(
@@ -442,6 +458,145 @@ function playersHtml() {
     ? `<div class="panel flush table-wrap"><table><thead><tr><th>${t("player")}</th><th>LVL</th><th>HP</th><th>Ping</th><th>${t("position")}</th><th></th></tr></thead><tbody>${rows.map((p) => `<tr><td><strong>${esc(p.name)}</strong><code class="table-sub">${esc(p.id)}</code></td><td>${p.level}</td><td>${p.health}</td><td>${p.ping ?? "—"}</td><td>${esc(p.pos)}</td><td>${button("actions", "playerAction", "small", `data-player="${esc(p.id)}"`)}</td></tr>`).join("")}</tbody></table></div>`
     : empty("noPlayers", "players");
 }
+function worldField(name, value, worlds = ["Navezgane", "RWG"]) {
+  const options = [...new Set([...worlds, value].filter(Boolean))];
+  const choices = [
+    ["", t("chooseWorld")],
+    ...options.map((world) => [
+      world,
+      world === "RWG" ? t("randomWorld") + " (RWG)" : world,
+    ]),
+  ];
+  return `<div class="form-field native-field" data-option="gameworld ${esc(t("world").toLowerCase())}"><label for="world-picker">${t("world")}</label>${gameSelect("world-picker", "", choices, value)}<input id="world-input" aria-label="${t("world")}" name="${name}" value="${esc(value)}"><small>${t("worldChoicesHelp")}</small></div>`;
+}
+
+const speeds = [
+  "walkSpeed",
+  "jogSpeed",
+  "runSpeed",
+  "sprintSpeed",
+  "nightmareSpeed",
+];
+const difficulties = [
+  "Scavenger",
+  "Adventurer",
+  "Nomad",
+  "Warrior",
+  "True Survivalist",
+  "Insane",
+];
+const speedKeys = [
+  "ZombieMove",
+  "ZombieMoveNight",
+  "ZombieFeralMove",
+  "ZombieBMMove",
+];
+
+function gameLabel(key, fallback = key) {
+  return t(key) === key ? fallback : t(key);
+}
+
+function gameSelect(id, attrs, choices, value) {
+  return `<select id="${id}" ${attrs}>${choices.map(([v, label]) => `<option value="${esc(v)}" ${v === value ? "selected" : ""}>${esc(label)}</option>`).join("")}</select>`;
+}
+
+function nativeOption(key, value, data) {
+  if (key === "GameWorld") return worldField(key, value, data.worlds);
+  const label = gameLabel(key, key.replace(/([a-z0-9])([A-Z])/g, "$1 $2"));
+  const managed = ["UserDataFolder", "TerminalWindowEnabled"].includes(key);
+  const help = managed ? t("managedOption") : data.comments[key];
+  const names =
+    key === "GameDifficulty"
+      ? difficulties
+      : speedKeys.includes(key)
+        ? speeds
+        : null;
+  const choices =
+    names?.map((name, index) => [String(index), t(name)]) ??
+    (["true", "false"].includes(value)
+      ? [
+          ["true", t("enabled")],
+          ["false", t("disabled")],
+        ]
+      : null);
+  if (choices && !choices.some(([v]) => v === value))
+    choices.push([value, value]);
+  const id = `native-${esc(key)}`;
+  const name = `name="${esc(key)}"`;
+  const control =
+    choices && !managed
+      ? gameSelect(id, name, choices, value)
+      : `<input id="${id}" ${name} type="${/password|token/i.test(key) ? "password" : "text"}" value="${esc(value)}" ${managed ? "disabled" : ""}>`;
+  return `<div class="form-field native-field ${key === "SandboxCode" ? "full" : ""}" data-option="${esc([key, label, help].join(" ").toLowerCase())}"><label for="${id}">${esc(label)}</label><code class="native-name">${esc(key)}</code>${control}${help ? `<small>${esc(help)}</small>` : ""}</div>`;
+}
+
+function sandboxBlocks(code) {
+  const normalized = code.trim() || "A";
+  if (!/^A(?:[A-Z]{3})*$/.test(normalized)) return null;
+  return new Map(
+    (normalized.slice(1).match(/.{3}/g) || []).map((block) => [
+      block.slice(0, 2),
+      block[2],
+    ]),
+  );
+}
+
+function sandboxEditor(data) {
+  if (!data.options?.length) return notice("sandboxHelp");
+  const groups = Map.groupBy(data.options, (option) => option.group);
+  const presets = data.presets?.length
+    ? `<div class="form-field full"><label for="sandbox-preset">${t("difficultyPreset")}</label>${gameSelect("sandbox-preset", "", [["", t("chooseDifficulty")], ...data.presets.map(({ label, code }) => [code, t(label)])], "")}<small>${t("difficultyHelp")}</small></div>`
+    : "";
+  return `${notice("sandboxEditorHelp")}${presets}${[...groups]
+    .map(
+      ([group, options]) =>
+        `<details class="sandbox-group full" ${group === "Entities" ? "open" : ""}><summary>${esc(gameLabel("sandbox" + group, group))} · ${options.length}</summary><div class="form-grid">${options
+          .map((option) => {
+            const label = gameLabel(option.key, option.label);
+            const choices = Object.entries(option.choices).map(
+              ([value, name], i) => [
+                value,
+                speedKeys.includes(option.key) ? t(speeds[i]) : name,
+              ],
+            );
+            const id = "sandbox-" + option.code;
+            const control = gameSelect(
+              id,
+              `data-sandbox-code="${option.code}" data-default="${option.default}"`,
+              choices,
+              option.default,
+            );
+            return `<div class="form-field native-field" data-option="${esc([option.key, label, group, option.label].join(" ").toLowerCase())}"><label for="${id}">${esc(label)}</label>${control}</div>`;
+          })
+          .join("")}</div></details>`,
+    )
+    .join("")}`;
+}
+
+function loadSandboxControls() {
+  const code = $("#native-SandboxCode");
+  if (!code) return;
+  const blocks = sandboxBlocks(code.value);
+  for (const control of $$("[data-sandbox-code]")) {
+    const value =
+      blocks?.get(control.dataset.sandboxCode) ?? control.dataset.default;
+    control.disabled =
+      !blocks || ![...control.options].some((option) => option.value === value);
+    control.value = control.disabled ? "" : value;
+  }
+}
+
+function filterGameOptions(query) {
+  const term = query.trim().toLowerCase();
+  for (const field of $$("[data-option]"))
+    field.hidden = !field.dataset.option.includes(term);
+  for (const group of $$(".sandbox-group")) {
+    group.hidden =
+      !!term && !group.querySelector("[data-option]:not([hidden])");
+    if (term && !group.hidden) group.open = true;
+  }
+}
+
 async function renderConfig(token) {
   const s = current(),
     data = await api("configInfo", { id: selected });
@@ -449,7 +604,7 @@ async function renderConfig(token) {
   const c = data.values;
   let html = "";
   if (tab === "basics") {
-    html = `<form id="config-form" class="panel"><div class="form-grid">${field("name", "name", s.name)}${field("config.ServerName", "name", c.ServerName)}${field("host", "host", s.host)}${field("config.ServerPort", "gamePort", c.ServerPort, "number")}${field("config.ServerMaxPlayerCount", "maxPlayers", c.ServerMaxPlayerCount, "number")}${field("config.ServerPassword", "password", c.ServerPassword, "password")}${field("config.GameWorld", "world", c.GameWorld)}${field("config.GameName", "worldName", c.GameName)}${field("config.WorldGenSeed", "seed", c.WorldGenSeed)}${field("config.WorldGenSize", "worldSize", c.WorldGenSize, "number")}${field("config.TelnetPort", "telnetPort", c.TelnetPort, "number")}${field("config.TelnetPassword", "telnetPassword", c.TelnetPassword, "password")}${field("config.WebDashboardPort", "webPort", c.WebDashboardPort, "number")}${select(
+    html = `<form id="config-form" class="panel"><div class="form-grid">${field("name", "name", s.name)}${field("config.ServerName", "name", c.ServerName)}${field("host", "host", s.host)}${field("config.ServerPort", "gamePort", c.ServerPort, "number")}${field("config.ServerMaxPlayerCount", "maxPlayers", c.ServerMaxPlayerCount, "number")}${field("config.ServerPassword", "password", c.ServerPassword, "password")}${worldField("config.GameWorld", c.GameWorld, data.worlds)}${field("config.GameName", "worldName", c.GameName)}${field("config.WorldGenSeed", "seed", c.WorldGenSeed)}${field("config.WorldGenSize", "worldSize", c.WorldGenSize, "number")}${field("config.TelnetPort", "telnetPort", c.TelnetPort, "number")}${field("config.TelnetPassword", "telnetPassword", c.TelnetPassword, "password")}${field("config.WebDashboardPort", "webPort", c.WebDashboardPort, "number")}${select(
       "config.ServerVisibility",
       "visibility",
       [
@@ -460,20 +615,11 @@ async function renderConfig(token) {
       c.ServerVisibility,
     )}${field("config.Region", "region", c.Region)}${field("config.Language", "language", c.Language)}${area("config.ServerDescription", "description", c.ServerDescription)}${area("config.ServerLoginConfirmationText", "rules", c.ServerLoginConfirmationText)}<div class="form-field full">${check("autoConnect", "autoConnect", s.autoConnect)}${check("autoRestart", "autoRestart", s.autoRestart)}${check("webEnabled", "webEnable", c.WebDashboardEnabled === "true")}${check("mapEnabled", "mapEnable", c.EnableMapRendering === "true")}</div>${area("connectCommands", "connectCommands", s.connectCommands)}<div class="section-divider">${t("version")}</div><div class="form-field full"><label>${t("version")}</label><div class="input-row"><input name="branch" value="${esc(s.branch)}" list="branches">${button("refreshVersions", "refreshVersions")}</div><datalist id="branches">${state.branches.map((b) => `<option value="${esc(b.id)}">${esc(b.label)}</option>`).join("")}</datalist><p class="help">${t("versionHelp")}</p></div></div>${formSave()}</form>`;
   } else if (tab === "advanced") {
-    html =
-      notice("sourceOptions") +
-      (data.sandbox ? notice("sandboxHelp") : "") +
-      `<input class="searchbar" id="config-search" placeholder="${t("search")}"><form id="native-form" class="panel"><div class="form-grid">${Object.entries(
-        c,
-      )
-        .filter(
-          ([k]) => k !== "UserDataFolder" && k !== "TerminalWindowEnabled",
-        )
-        .map(
-          ([k, v]) =>
-            `<div class="form-field native-field ${k === "SandboxCode" ? "full" : ""}" data-option="${esc(k.toLowerCase())}"><label for="native-${esc(k)}">${esc(t(k))}</label><code class="native-name">${esc(k)}</code>${["true", "false"].includes(v) ? `<select id="native-${esc(k)}" name="${esc(k)}"><option value="true" ${v === "true" ? "selected" : ""}>${t("enabled")}</option><option value="false" ${v === "false" ? "selected" : ""}>${t("disabled")}</option></select>` : `<input id="native-${esc(k)}" name="${esc(k)}" type="${/password/i.test(k) ? "password" : "text"}" value="${esc(v)}">`}${data.comments[k] ? `<small>${esc(data.comments[k])}</small>` : ""}</div>`,
-        )
-        .join("")}</div>${formSave()}</form>`;
+    html = `${notice("sourceOptions")}<input class="searchbar" id="config-search" placeholder="${t("search")}"><form id="native-form" class="panel"><div class="form-grid">${data.sandbox ? sandboxEditor(data) : ""}${Object.entries(
+      c,
+    )
+      .map(([key, value]) => nativeOption(key, value, data))
+      .join("")}</div>${formSave()}</form>`;
   } else if (tab === "security") {
     html =
       notice("securityHelp") +
@@ -482,6 +628,7 @@ async function renderConfig(token) {
     html = `<form id="health-form" class="panel"><h2>${t("health")}</h2>${check("autoRestart", "autoRestart", s.autoRestart)}${check("healthEnabled", "healthRestart", s.health?.enabled)}${check("avoidBloodMoon", "avoidBloodMoon", s.health?.avoidBloodMoon !== false)}<div class="form-grid">${field("maxRamMb", "maxMemory", s.health?.maxRamMb || 0, "number")}${field("healthFailures", "failures", s.health?.failures || 3, "number")}</div>${area("connectCommands", "connectCommands", s.connectCommands)}<div class="settings-footer">${button("forceStop", "forceStop", "danger")}${deleteButton(s.id, runtime())}<button class="primary" type="submit">${t("save")}</button></div></form>`;
   }
   $("#config-body").innerHTML = html;
+  loadSandboxControls();
 }
 async function loadMods(token = renderId) {
   try {
@@ -762,13 +909,37 @@ document.addEventListener("input", (e) => {
     filterText = e.target.value;
     renderLogs();
   }
-  if (e.target.id === "config-search")
-    $$("[data-option]").forEach(
-      (n) =>
-        (n.hidden = !n.dataset.option.includes(e.target.value.toLowerCase())),
-    );
+  if (e.target.id === "config-search") filterGameOptions(e.target.value);
+  if (e.target.id === "native-SandboxCode") loadSandboxControls();
+  if (e.target.id === "world-input") $("#world-picker").value = e.target.value;
 });
 document.addEventListener("change", (e) => {
+  if (e.target.id === "world-picker" && e.target.value) {
+    $("#world-input").value = e.target.value;
+    draftDirty = true;
+  }
+  if (e.target.dataset.sandboxCode) {
+    const code = $("#native-SandboxCode");
+    const blocks = sandboxBlocks(code.value);
+    if (!blocks) return;
+    const { sandboxCode, default: defaultValue } = e.target.dataset;
+    if (e.target.value === defaultValue) blocks.delete(sandboxCode);
+    else blocks.set(sandboxCode, e.target.value);
+    code.value =
+      "A" +
+      [...blocks]
+        .sort()
+        .map(([key, value]) => key + value)
+        .join("");
+    const preset = $("#sandbox-preset");
+    if (preset) preset.value = "";
+    draftDirty = true;
+  }
+  if (e.target.id === "sandbox-preset" && e.target.value) {
+    $("#native-SandboxCode").value = e.target.value;
+    draftDirty = true;
+    loadSandboxControls();
+  }
   if (e.target.id === "log-kind") {
     filterKind = e.target.value;
     renderLogs();
@@ -850,13 +1021,25 @@ document.addEventListener("click", async (e) => {
         await api(a, { id });
         await render();
         break;
-      case "install":
-        if (await confirm(t("install"), t("installHelp"))) {
+      case "install": {
+        const target = state.servers.find((server) => server.id === id);
+        if (
+          target &&
+          (await confirm(
+            t("install") + " · " + target.name,
+            target.branch +
+              " · " +
+              target.directory +
+              "\n\n" +
+              t("installHelp"),
+          ))
+        ) {
           await api("install", { id });
           toast(t("success"));
           await render();
         }
         break;
+      }
       case "connect":
       case "disconnect":
         await api(a, { id });

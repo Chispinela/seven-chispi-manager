@@ -1,0 +1,8043 @@
+{
+  "versions": {
+    "3.0.0": [
+      {
+        "key": "RangedDamage",
+        "code": "AA",
+        "default": "H",
+        "group": "Player",
+        "label": "Ranged Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "MeleeDamage",
+        "code": "AB",
+        "default": "H",
+        "group": "Player",
+        "label": "Melee Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "BlockDamage",
+        "code": "AC",
+        "default": "H",
+        "group": "Player",
+        "label": "Block Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "TerrainDamage",
+        "code": "AD",
+        "default": "H",
+        "group": "Player",
+        "label": "Terrain Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "HeadshotMultiplier",
+        "code": "AE",
+        "default": "H",
+        "group": "Player",
+        "label": "Headshot Multiplier",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "IncomingDamage",
+        "code": "AR",
+        "default": "H",
+        "group": "Player",
+        "label": "Player Damage In",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "WalkSpeed",
+        "code": "AG",
+        "default": "G",
+        "group": "Player",
+        "label": "Walk Speed",
+        "choices": {
+          "A": "25%",
+          "B": "50%",
+          "C": "60%",
+          "D": "70%",
+          "E": "80%",
+          "F": "90%",
+          "G": "100%",
+          "H": "110%",
+          "I": "120%",
+          "J": "130%",
+          "K": "140%",
+          "L": "150%",
+          "M": "200%",
+          "N": "300%"
+        }
+      },
+      {
+        "key": "RunSpeed",
+        "code": "AH",
+        "default": "H",
+        "group": "Player",
+        "label": "Run Speed",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "60%",
+          "E": "70%",
+          "F": "80%",
+          "G": "90%",
+          "H": "100%",
+          "I": "110%",
+          "J": "120%",
+          "K": "130%",
+          "L": "140%",
+          "M": "150%",
+          "N": "200%",
+          "O": "300%"
+        }
+      },
+      {
+        "key": "CrouchSpeed",
+        "code": "AF",
+        "default": "H",
+        "group": "Player",
+        "label": "Crouch Speed",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "60%",
+          "E": "70%",
+          "F": "80%",
+          "G": "90%",
+          "H": "100%",
+          "I": "110%",
+          "J": "120%",
+          "K": "130%",
+          "L": "140%",
+          "M": "150%",
+          "N": "200%",
+          "O": "300%"
+        }
+      },
+      {
+        "key": "CrouchRunSpeed",
+        "code": "EI",
+        "default": "H",
+        "group": "Player",
+        "label": "Crouch Run Speed",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "60%",
+          "E": "70%",
+          "F": "80%",
+          "G": "90%",
+          "H": "100%",
+          "I": "110%",
+          "J": "120%",
+          "K": "130%",
+          "L": "140%",
+          "M": "150%",
+          "N": "200%",
+          "O": "300%"
+        }
+      },
+      {
+        "key": "JumpStrength",
+        "code": "AI",
+        "default": "C",
+        "group": "Player",
+        "label": "Jump Strength",
+        "choices": {
+          "A": "None (0%)",
+          "B": "50%",
+          "C": "100%",
+          "D": "125%",
+          "E": "150%",
+          "F": "200%",
+          "G": "300%"
+        }
+      },
+      {
+        "key": "StaminaRegen",
+        "code": "AK",
+        "default": "D",
+        "group": "Player",
+        "label": "Stamina Regen",
+        "choices": {
+          "A": "25%",
+          "B": "50%",
+          "C": "75%",
+          "D": "100%",
+          "E": "125%",
+          "F": "150%",
+          "G": "200%",
+          "H": "300%"
+        }
+      },
+      {
+        "key": "StaminaUsage",
+        "code": "AJ",
+        "default": "E",
+        "group": "Player",
+        "label": "Stamina Usage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "175%",
+          "I": "200%"
+        }
+      },
+      {
+        "key": "XPMultiplier",
+        "code": "AS",
+        "default": "E",
+        "group": "Player",
+        "label": "XP Multiplier",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "175%",
+          "I": "200%",
+          "J": "300%",
+          "K": "500%"
+        }
+      },
+      {
+        "key": "ShowXP",
+        "code": "AT",
+        "default": "A",
+        "group": "Player",
+        "label": "Show XP",
+        "choices": {
+          "A": "All",
+          "B": "Bar Only",
+          "C": "Notifications Only",
+          "D": "None"
+        }
+      },
+      {
+        "key": "PlayerLevelBonusApplied",
+        "code": "AL",
+        "default": "B",
+        "group": "Player",
+        "label": "Level Stat Bonus",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "SkillGainRate",
+        "code": "EM",
+        "default": "A",
+        "group": "Player",
+        "label": "Skill Gain Rate",
+        "choices": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4",
+          "E": "5"
+        }
+      },
+      {
+        "key": "SkillPointsPerLevel",
+        "code": "EN",
+        "default": "B",
+        "group": "Player",
+        "label": "Skill Gain Amount",
+        "choices": {
+          "A": "None",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6",
+          "H": "7"
+        }
+      },
+      {
+        "key": "DeathPenalty",
+        "code": "BA",
+        "default": "B",
+        "group": "Player",
+        "label": "Death Penalty",
+        "choices": {
+          "A": "None",
+          "B": "XP Only",
+          "C": "Injured",
+          "D": "Permanent Death"
+        }
+      },
+      {
+        "key": "LoseItemsOnDeathType",
+        "code": "AW",
+        "default": "A",
+        "group": "Player",
+        "label": "Lose On Death",
+        "choices": {
+          "A": "None",
+          "B": "All",
+          "C": "Toolbelt Only",
+          "D": "Backpack Only",
+          "E": "Equipment",
+          "F": "Carried Only"
+        }
+      },
+      {
+        "key": "LoseItemsOnDeathCount",
+        "code": "AX",
+        "default": "A",
+        "group": "Player",
+        "label": "Death Loss Count",
+        "choices": {
+          "A": "1-3",
+          "B": "1-5",
+          "C": "1-10",
+          "D": "1-20",
+          "E": "3-5",
+          "F": "5-7",
+          "G": "5-10",
+          "H": "7-10",
+          "I": "10-15",
+          "J": "15-20"
+        }
+      },
+      {
+        "key": "DegradeItemsOnDeath",
+        "code": "AY",
+        "default": "A",
+        "group": "Player",
+        "label": "Death Degradation",
+        "choices": {
+          "A": "None",
+          "B": "Durability",
+          "C": "Max Durability",
+          "D": "Both"
+        }
+      },
+      {
+        "key": "DegradeAmountOnDeath",
+        "code": "AZ",
+        "default": "C",
+        "group": "Player",
+        "label": "Death Degradation Amount",
+        "choices": {
+          "A": "None (0%)",
+          "B": "5%",
+          "C": "10%",
+          "D": "15%",
+          "E": "20%",
+          "F": "25%"
+        }
+      },
+      {
+        "key": "DropOnDeath",
+        "code": "BB",
+        "default": "B",
+        "group": "Player",
+        "label": "Drop On Death",
+        "choices": {
+          "A": "None",
+          "B": "All",
+          "C": "Toolbelt Only",
+          "D": "Backpack Only",
+          "E": "Equipment",
+          "F": "Carried Only",
+          "G": "Delete All"
+        }
+      },
+      {
+        "key": "DropOnQuit",
+        "code": "BC",
+        "default": "A",
+        "group": "Player",
+        "label": "Drop On Quit",
+        "choices": {
+          "A": "None",
+          "B": "All",
+          "C": "Toolbelt Only",
+          "D": "Backpack Only",
+          "E": "Equipment",
+          "F": "Carried Only"
+        }
+      },
+      {
+        "key": "InfectionRate",
+        "code": "BD",
+        "default": "E",
+        "group": "Player",
+        "label": "Infection Rate",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "NewbieCoat",
+        "code": "AP",
+        "default": "B",
+        "group": "Player",
+        "label": "New Player Buff",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "EncumbranceModifier",
+        "code": "AU",
+        "default": "C",
+        "group": "Player",
+        "label": "Encumbrance Slots",
+        "choices": {
+          "A": "Disabled (1000%)",
+          "B": "Low (135%)",
+          "C": "Default (100%)",
+          "D": "High (70%)",
+          "E": "Very High (35%)",
+          "F": "Full (0%)"
+        }
+      },
+      {
+        "key": "JarRefund",
+        "code": "AM",
+        "default": "H",
+        "group": "Player",
+        "label": "Jar Refund",
+        "choices": {
+          "A": "None (0%)",
+          "B": "5%",
+          "C": "10%",
+          "D": "20%",
+          "E": "30%",
+          "F": "40%",
+          "G": "50%",
+          "H": "60%",
+          "I": "70%",
+          "J": "80%",
+          "K": "90%",
+          "L": "100%"
+        }
+      },
+      {
+        "key": "EnemySpawnMode",
+        "code": "BE",
+        "default": "B",
+        "group": "Entities",
+        "label": "Enemy Spawning",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "MaxEnemyTier",
+        "code": "BR",
+        "default": "F",
+        "group": "Entities",
+        "label": "Max Enemy Tier",
+        "choices": {
+          "A": "Normals",
+          "B": "Strongs",
+          "C": "Specials",
+          "D": "Ferals",
+          "E": "Radiated",
+          "F": "Elites"
+        }
+      },
+      {
+        "key": "BiomeEnemyDensity",
+        "code": "BU",
+        "default": "A",
+        "group": "Entities",
+        "label": "Enemy Density",
+        "choices": {
+          "A": "Default",
+          "B": "Very Low",
+          "C": "Low",
+          "D": "Medium",
+          "E": "High",
+          "F": "Very High"
+        }
+      },
+      {
+        "key": "BiomeZombieRespawn",
+        "code": "BS",
+        "default": "A",
+        "group": "Entities",
+        "label": "Enemy Respawn",
+        "choices": {
+          "A": "Default",
+          "B": "Very Slow",
+          "C": "Slow",
+          "D": "Normal",
+          "E": "Fast",
+          "F": "Very Fast"
+        }
+      },
+      {
+        "key": "BiomeAnimalRespawn",
+        "code": "BT",
+        "default": "A",
+        "group": "Entities",
+        "label": "Biome Animal Respawn",
+        "choices": {
+          "A": "Default",
+          "B": "Very Slow",
+          "C": "Slow",
+          "D": "Normal",
+          "E": "Fast",
+          "F": "Very Fast"
+        }
+      },
+      {
+        "key": "EntityDamage",
+        "code": "BF",
+        "default": "H",
+        "group": "Entities",
+        "label": "Enemy Damage Dealt",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "EntityIncomingDamage",
+        "code": "BQ",
+        "default": "G",
+        "group": "Entities",
+        "label": "Entity Damage In",
+        "choices": {
+          "A": "25%",
+          "B": "35%",
+          "C": "50%",
+          "D": "65%",
+          "E": "75%",
+          "F": "85%",
+          "G": "100%",
+          "H": "125%",
+          "I": "150%",
+          "J": "200%",
+          "K": "250%",
+          "L": "300%"
+        }
+      },
+      {
+        "key": "BlockDamageAI",
+        "code": "BG",
+        "default": "H",
+        "group": "Entities",
+        "label": "Enemy Block Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "BlockDamageAIBM",
+        "code": "BH",
+        "default": "H",
+        "group": "Entities",
+        "label": "BM Block Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "HeadshotMode",
+        "code": "AQ",
+        "default": "A",
+        "group": "Entities",
+        "label": "Headshot Mode",
+        "choices": {
+          "A": "None",
+          "B": "Headshot Only",
+          "C": "Headshot Finisher"
+        }
+      },
+      {
+        "key": "ShowHealthBars",
+        "code": "AN",
+        "default": "A",
+        "group": "Entities",
+        "label": "Entity Health Bars",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "ShowEnemyDamage",
+        "code": "AO",
+        "default": "A",
+        "group": "Entities",
+        "label": "Show Entity Damage",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "ZombieMove",
+        "code": "BI",
+        "default": "A",
+        "group": "Entities",
+        "label": "Zombie Day Speed",
+        "choices": {
+          "A": "Walk",
+          "B": "Jog",
+          "C": "Run",
+          "D": "Sprint",
+          "E": "Nightmare"
+        }
+      },
+      {
+        "key": "ZombieMoveNight",
+        "code": "BJ",
+        "default": "D",
+        "group": "Entities",
+        "label": "Zombie Night Speed",
+        "choices": {
+          "A": "Walk",
+          "B": "Jog",
+          "C": "Run",
+          "D": "Sprint",
+          "E": "Nightmare"
+        }
+      },
+      {
+        "key": "ZombieFeralMove",
+        "code": "BK",
+        "default": "D",
+        "group": "Entities",
+        "label": "Zombie Feral Speed",
+        "choices": {
+          "A": "Walk",
+          "B": "Jog",
+          "C": "Run",
+          "D": "Sprint",
+          "E": "Nightmare"
+        }
+      },
+      {
+        "key": "ZombieBMMove",
+        "code": "BL",
+        "default": "D",
+        "group": "Entities",
+        "label": "Zombie BM Speed",
+        "choices": {
+          "A": "Walk",
+          "B": "Jog",
+          "C": "Run",
+          "D": "Sprint",
+          "E": "Nightmare"
+        }
+      },
+      {
+        "key": "ZombieFeralSense",
+        "code": "BM",
+        "default": "A",
+        "group": "Entities",
+        "label": "Zombie Feral Sense",
+        "choices": {
+          "A": "Disabled",
+          "B": "Day",
+          "C": "Night",
+          "D": "All"
+        }
+      },
+      {
+        "key": "AISmellMode",
+        "code": "BN",
+        "default": "D",
+        "group": "Entities",
+        "label": "AI Smell Mode",
+        "choices": {
+          "A": "None",
+          "B": "Walk",
+          "C": "Jog",
+          "D": "Run",
+          "E": "Sprint",
+          "F": "Nightmare"
+        }
+      },
+      {
+        "key": "ZombieRageChance",
+        "code": "BP",
+        "default": "B",
+        "group": "Entities",
+        "label": "Zombie Rage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "15%",
+          "C": "30%",
+          "D": "35%",
+          "E": "40%",
+          "F": "50%",
+          "G": "60%",
+          "H": "75%",
+          "I": "90%",
+          "J": "100%"
+        }
+      },
+      {
+        "key": "AllowZombieDigging",
+        "code": "BO",
+        "default": "B",
+        "group": "Entities",
+        "label": "Zombie Digging",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "ZombiesEatAnimals",
+        "code": "BV",
+        "default": "B",
+        "group": "Entities",
+        "label": "Zombies Eat Animals",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "GlobalGSModifier",
+        "code": "CI",
+        "default": "C",
+        "group": "World",
+        "label": "Global Game Stage",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "BiomeGSModifier",
+        "code": "CJ",
+        "default": "C",
+        "group": "World",
+        "label": "Biome Game Stage",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "BiomeProgression",
+        "code": "CD",
+        "default": "B",
+        "group": "World",
+        "label": "Biome Progression",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "TemperatureSurvival",
+        "code": "CE",
+        "default": "B",
+        "group": "World",
+        "label": "Temperature Survival",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "MaxTechType",
+        "code": "CW",
+        "default": "E",
+        "group": "World",
+        "label": "Max Tech Type",
+        "choices": {
+          "A": "None",
+          "B": "Tech 0",
+          "C": "Tech 1",
+          "D": "Tech 2",
+          "E": "Tech 3"
+        }
+      },
+      {
+        "key": "WorkstationsInTheWild",
+        "code": "CV",
+        "default": "A",
+        "group": "World",
+        "label": "Workstations In The Wild",
+        "choices": {
+          "A": "None (0%)",
+          "B": "5%",
+          "C": "10%",
+          "D": "20%",
+          "E": "30%",
+          "F": "40%",
+          "G": "50%",
+          "H": "60%",
+          "I": "70%",
+          "J": "80%",
+          "K": "90%",
+          "L": "100%"
+        }
+      },
+      {
+        "key": "BloodMoonFrequency",
+        "code": "BW",
+        "default": "H",
+        "group": "World",
+        "label": "Blood Moon Frequency",
+        "choices": {
+          "A": "Disabled",
+          "B": "1 Day",
+          "C": "2 Days",
+          "D": "3 Days",
+          "E": "4 Days",
+          "F": "5 Days",
+          "G": "6 Days",
+          "H": "7 Days",
+          "I": "8 Days",
+          "J": "9 Days",
+          "K": "10 Days",
+          "L": "14 Days",
+          "M": "20 Days",
+          "N": "30 Days"
+        }
+      },
+      {
+        "key": "BloodMoonRange",
+        "code": "BX",
+        "default": "A",
+        "group": "World",
+        "label": "Blood Moon Range",
+        "choices": {
+          "A": "0 Days",
+          "B": "1 Day",
+          "C": "2 Days",
+          "D": "3 Days",
+          "E": "4 Days",
+          "F": "7 Days",
+          "G": "10 Days",
+          "H": "14 Days",
+          "I": "20 Days"
+        }
+      },
+      {
+        "key": "BloodMoonEnemyCount",
+        "code": "BZ",
+        "default": "C",
+        "group": "World",
+        "label": "Blood Moon Count",
+        "choices": {
+          "A": "4 Enemies",
+          "B": "6 Enemies",
+          "C": "8 Enemies",
+          "D": "10 Enemies",
+          "E": "12 Enemies",
+          "F": "16 Enemies",
+          "G": "24 Enemies",
+          "H": "32 Enemies",
+          "I": "64 Enemies"
+        }
+      },
+      {
+        "key": "BloodMoonWarning",
+        "code": "BY",
+        "default": "B",
+        "group": "World",
+        "label": "Blood Moon Warning",
+        "choices": {
+          "A": "Disabled",
+          "B": "Morning",
+          "C": "Evening"
+        }
+      },
+      {
+        "key": "AirDropFrequency",
+        "code": "CA",
+        "default": "D",
+        "group": "World",
+        "label": "Air Drops",
+        "choices": {
+          "A": "Disabled",
+          "B": "Every Day",
+          "C": "1-3 Days",
+          "D": "3 Days",
+          "E": "3-7 Days",
+          "F": "7 Days",
+          "G": "1-7 Days"
+        }
+      },
+      {
+        "key": "AirDropRandomTime",
+        "code": "CC",
+        "default": "A",
+        "group": "World",
+        "label": "Air Drop Variance",
+        "choices": {
+          "A": "None",
+          "B": "Morning",
+          "C": "Mid Day",
+          "D": "Evening",
+          "E": "Night",
+          "F": "All Day",
+          "G": "Any"
+        }
+      },
+      {
+        "key": "StormFreq",
+        "code": "CF",
+        "default": "C",
+        "group": "World",
+        "label": "Storm Frequency",
+        "choices": {
+          "A": "None (0%)",
+          "B": "50%",
+          "C": "100%",
+          "D": "150%",
+          "E": "200%",
+          "F": "300%",
+          "G": "400%",
+          "H": "500%"
+        }
+      },
+      {
+        "key": "StormWarning",
+        "code": "CG",
+        "default": "B",
+        "group": "World",
+        "label": "Storm Warning",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "HeatMapSensitivity",
+        "code": "CH",
+        "default": "D",
+        "group": "World",
+        "label": "Heat Map Sensitivity",
+        "choices": {
+          "A": "Disabled (0%)",
+          "B": "Very Low (25%)",
+          "C": "Low (50%)",
+          "D": "Default (100%)",
+          "E": "High (150%)",
+          "F": "Very High (200%)"
+        }
+      },
+      {
+        "key": "DayNightLength",
+        "code": "CO",
+        "default": "F",
+        "group": "World",
+        "label": "24 Hour Cycle",
+        "choices": {
+          "A": "10",
+          "B": "20",
+          "C": "30",
+          "D": "40",
+          "E": "50",
+          "F": "60",
+          "G": "90",
+          "H": "120"
+        }
+      },
+      {
+        "key": "DayLightLength",
+        "code": "CP",
+        "default": "I",
+        "group": "World",
+        "label": "Daylight Length",
+        "choices": {
+          "A": "Always Night",
+          "B": "4",
+          "C": "6",
+          "D": "8",
+          "E": "10",
+          "F": "12",
+          "G": "14",
+          "H": "16",
+          "I": "18",
+          "J": "20",
+          "K": "Always Day"
+        }
+      },
+      {
+        "key": "AirDropMarker",
+        "code": "CB",
+        "default": "B",
+        "group": "World",
+        "label": "Mark Air Drops",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "AllowMap",
+        "code": "CQ",
+        "default": "B",
+        "group": "World",
+        "label": "Allow Map",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "AllowCompass",
+        "code": "CR",
+        "default": "B",
+        "group": "World",
+        "label": "Allow Compass",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "AllowScreenMarkers",
+        "code": "CS",
+        "default": "B",
+        "group": "World",
+        "label": "Allow Screen Markers",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "ShowLocationInfo",
+        "code": "CT",
+        "default": "B",
+        "group": "World",
+        "label": "Show Location Info",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "Name Only"
+        }
+      },
+      {
+        "key": "ShowDayTime",
+        "code": "CU",
+        "default": "B",
+        "group": "World",
+        "label": "Show Day/Time",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "LootMaxTier",
+        "code": "CZ",
+        "default": "F",
+        "group": "Resources",
+        "label": "Max Loot Quality",
+        "choices": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4",
+          "E": "5",
+          "F": "6"
+        }
+      },
+      {
+        "key": "GlobalLSModifier",
+        "code": "CK",
+        "default": "C",
+        "group": "Resources",
+        "label": "Global Loot Stage",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "BiomeLSModifier",
+        "code": "CL",
+        "default": "C",
+        "group": "Resources",
+        "label": "Biome Loot Stage",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "POITierLSModifier",
+        "code": "CM",
+        "default": "C",
+        "group": "Resources",
+        "label": "POI Loot Stage",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "LootRespawnDays",
+        "code": "CX",
+        "default": "C",
+        "group": "Resources",
+        "label": "Loot Respawn Days",
+        "choices": {
+          "A": "Disabled",
+          "B": "5",
+          "C": "7",
+          "D": "10",
+          "E": "15",
+          "F": "20",
+          "G": "30",
+          "H": "40",
+          "I": "50"
+        }
+      },
+      {
+        "key": "LootTimer",
+        "code": "CY",
+        "default": "E",
+        "group": "Resources",
+        "label": "Loot Timer",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "LootBagChance",
+        "code": "DM",
+        "default": "H",
+        "group": "Resources",
+        "label": "Loot Bag Drop",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "GlobalLootCount",
+        "code": "DA",
+        "default": "H",
+        "group": "Resources",
+        "label": "Loot Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "FoodLootCount",
+        "code": "DB",
+        "default": "H",
+        "group": "Resources",
+        "label": "Food Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "DrinkLootCount",
+        "code": "DC",
+        "default": "H",
+        "group": "Resources",
+        "label": "Drink Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "MedicalLootCount",
+        "code": "DD",
+        "default": "H",
+        "group": "Resources",
+        "label": "Medical Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "AmmoLootCount",
+        "code": "DE",
+        "default": "H",
+        "group": "Resources",
+        "label": "Ammo Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "ResourceLootCount",
+        "code": "DF",
+        "default": "H",
+        "group": "Resources",
+        "label": "Resource Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "ArmorLootCount",
+        "code": "DG",
+        "default": "H",
+        "group": "Resources",
+        "label": "Armor Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "MeleeLootCount",
+        "code": "DH",
+        "default": "H",
+        "group": "Resources",
+        "label": "Melee Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "RangedLootCount",
+        "code": "DI",
+        "default": "H",
+        "group": "Resources",
+        "label": "Ranged Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "DukesLootCount",
+        "code": "DJ",
+        "default": "H",
+        "group": "Resources",
+        "label": "Currency Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "CraftingMagazinesLootCount",
+        "code": "DK",
+        "default": "H",
+        "group": "Resources",
+        "label": "Magazine Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "BookLootCount",
+        "code": "EH",
+        "default": "H",
+        "group": "Resources",
+        "label": "Book Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "TreasureMapChance",
+        "code": "DL",
+        "default": "H",
+        "group": "Resources",
+        "label": "Treasure Map Chance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "60%",
+          "E": "70%",
+          "F": "80%",
+          "G": "90%",
+          "H": "100%",
+          "I": "110%",
+          "J": "120%",
+          "K": "130%",
+          "L": "140%",
+          "M": "150%",
+          "N": "200%",
+          "O": "300%"
+        }
+      },
+      {
+        "key": "MiningOutput",
+        "code": "DX",
+        "default": "H",
+        "group": "Resources",
+        "label": "Mining Yield",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "CropOutput",
+        "code": "DN",
+        "default": "H",
+        "group": "Resources",
+        "label": "Crop Yield",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "SeedDropOutput",
+        "code": "DO",
+        "default": "H",
+        "group": "Resources",
+        "label": "Seed Drop",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "HarvestingOutput",
+        "code": "DY",
+        "default": "H",
+        "group": "Resources",
+        "label": "Resource Yield",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "CropGrowthSpeed",
+        "code": "DP",
+        "default": "F",
+        "group": "Resources",
+        "label": "Crop Growth",
+        "choices": {
+          "A": "None (100000%)",
+          "B": "Instant (0%)",
+          "C": "20%",
+          "D": "50%",
+          "E": "75%",
+          "F": "100%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "CraftingProgression",
+        "code": "DS",
+        "default": "B",
+        "group": "Crafting",
+        "label": "Crafting Progression",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "CraftingMaxTier",
+        "code": "DW",
+        "default": "F",
+        "group": "Crafting",
+        "label": "Crafting Max Quality",
+        "choices": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4",
+          "E": "5",
+          "F": "6"
+        }
+      },
+      {
+        "key": "PointsPerMagazine",
+        "code": "EL",
+        "default": "B",
+        "group": "Crafting",
+        "label": "Magazine Progress",
+        "choices": {
+          "A": "None",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6",
+          "H": "7"
+        }
+      },
+      {
+        "key": "BackpackCrafting",
+        "code": "DQ",
+        "default": "B",
+        "group": "Crafting",
+        "label": "Backpack Crafting",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "Limited",
+          "D": "Workbench Only"
+        }
+      },
+      {
+        "key": "WorkstationCrafting",
+        "code": "DR",
+        "default": "B",
+        "group": "Crafting",
+        "label": "Workstation Crafting",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "SmeltingType",
+        "code": "EA",
+        "default": "A",
+        "group": "Crafting",
+        "label": "Smelter Type",
+        "choices": {
+          "A": "Smelter",
+          "B": "Recipes"
+        }
+      },
+      {
+        "key": "CraftingTime",
+        "code": "DT",
+        "default": "E",
+        "group": "Crafting",
+        "label": "Crafting Timer",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "CraftingInput",
+        "code": "DU",
+        "default": "E",
+        "group": "Crafting",
+        "label": "Crafting Cost",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "CraftingOutput",
+        "code": "DV",
+        "default": "D",
+        "group": "Crafting",
+        "label": "Crafting Yield",
+        "choices": {
+          "A": "25%",
+          "B": "50%",
+          "C": "75%",
+          "D": "100%",
+          "E": "125%",
+          "F": "150%",
+          "G": "200%",
+          "H": "300%"
+        }
+      },
+      {
+        "key": "ScrappingOutput",
+        "code": "DZ",
+        "default": "E",
+        "group": "Crafting",
+        "label": "Scrapping Yield",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "DewCollectorTime",
+        "code": "EB",
+        "default": "E",
+        "group": "Crafting",
+        "label": "Dew Collector Time",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "DewCollectorOutput",
+        "code": "EC",
+        "default": "A",
+        "group": "Crafting",
+        "label": "Dew Collector Yield",
+        "choices": {
+          "A": "100%",
+          "B": "200%",
+          "C": "300%",
+          "D": "400%",
+          "E": "500%"
+        }
+      },
+      {
+        "key": "DewCollectorInput",
+        "code": "ED",
+        "default": "B",
+        "group": "Crafting",
+        "label": "Dew Collector Input",
+        "choices": {
+          "A": "None (0%)",
+          "B": "100%",
+          "C": "200%",
+          "D": "300%"
+        }
+      },
+      {
+        "key": "ApiaryTime",
+        "code": "EE",
+        "default": "E",
+        "group": "Crafting",
+        "label": "Apiary Time",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "ApiaryOutput",
+        "code": "EF",
+        "default": "A",
+        "group": "Crafting",
+        "label": "Apiary Yield",
+        "choices": {
+          "A": "100%",
+          "B": "200%",
+          "C": "300%",
+          "D": "400%",
+          "E": "500%"
+        }
+      },
+      {
+        "key": "ApiaryInput",
+        "code": "EG",
+        "default": "F",
+        "group": "Crafting",
+        "label": "Apiary Input",
+        "choices": {
+          "A": "None (0%)",
+          "B": "20%",
+          "C": "40%",
+          "D": "60%",
+          "E": "80%",
+          "F": "100%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "ItemDegradation",
+        "code": "AV",
+        "default": "D",
+        "group": "Crafting",
+        "label": "Item Degradation",
+        "choices": {
+          "A": "Disabled (0%)",
+          "B": "Very Low (25%)",
+          "C": "Low (50%)",
+          "D": "Default (100%)",
+          "E": "High (150%)",
+          "F": "Very High (200%)"
+        }
+      },
+      {
+        "key": "RepairTypes",
+        "code": "EJ",
+        "default": "D",
+        "group": "Crafting",
+        "label": "Repair Method",
+        "choices": {
+          "A": "None",
+          "B": "Repair Only",
+          "C": "Combine Only",
+          "D": "Both"
+        }
+      },
+      {
+        "key": "MaxDegradationAmount",
+        "code": "EK",
+        "default": "A",
+        "group": "Crafting",
+        "label": "Repair Degradation",
+        "choices": {
+          "A": "None (0%)",
+          "B": "5%",
+          "C": "10%",
+          "D": "15%",
+          "E": "20%",
+          "F": "25%"
+        }
+      },
+      {
+        "key": "TradersEnabled",
+        "code": "EY",
+        "default": "B",
+        "group": "Traders",
+        "label": "Trading Enabled",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "VendingEnabled",
+        "code": "EZ",
+        "default": "B",
+        "group": "Traders",
+        "label": "Vending Enabled",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "TraderHours",
+        "code": "EX",
+        "default": "A",
+        "group": "Traders",
+        "label": "Trader Hours",
+        "choices": {
+          "A": "Default",
+          "B": "Morning",
+          "C": "Mid Day",
+          "D": "Evening",
+          "E": "Night",
+          "F": "BM Closed",
+          "G": "Always Open"
+        }
+      },
+      {
+        "key": "TraderProtection",
+        "code": "FC",
+        "default": "A",
+        "group": "Traders",
+        "label": "Trader Protection",
+        "choices": {
+          "A": "Yes",
+          "B": "Claimable",
+          "C": "Not Claimable"
+        }
+      },
+      {
+        "key": "TraderDialog",
+        "code": "EW",
+        "default": "B",
+        "group": "Traders",
+        "label": "Trading Dialog",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "GlobalTSModifier",
+        "code": "CN",
+        "default": "C",
+        "group": "Traders",
+        "label": "Global Trader Stage",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "TraderMaxTier",
+        "code": "FG",
+        "default": "F",
+        "group": "Traders",
+        "label": "Trader Max Quality",
+        "choices": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4",
+          "E": "5",
+          "F": "6"
+        }
+      },
+      {
+        "key": "TraderItemAbundance",
+        "code": "FE",
+        "default": "C",
+        "group": "Traders",
+        "label": "Trader Item Count",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "VendingItemAbundance",
+        "code": "FI",
+        "default": "C",
+        "group": "Traders",
+        "label": "Vending Item Count",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "TraderResetInterval",
+        "code": "FD",
+        "default": "A",
+        "group": "Traders",
+        "label": "Trader Reset",
+        "choices": {
+          "A": "Default",
+          "B": "1 Day",
+          "C": "2 Days",
+          "D": "3 Days",
+          "E": "4 Days",
+          "F": "5 Days",
+          "G": "6 Days",
+          "H": "7 Days",
+          "I": "14 Days"
+        }
+      },
+      {
+        "key": "VendingResetInterval",
+        "code": "FH",
+        "default": "A",
+        "group": "Traders",
+        "label": "Vending Reset",
+        "choices": {
+          "A": "Default",
+          "B": "1 Day",
+          "C": "2 Days",
+          "D": "3 Days",
+          "E": "4 Days",
+          "F": "5 Days",
+          "G": "6 Days",
+          "H": "7 Days",
+          "I": "14 Days"
+        }
+      },
+      {
+        "key": "TraderSellPrices",
+        "code": "FA",
+        "default": "E",
+        "group": "Traders",
+        "label": "Sell Price",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "175%",
+          "I": "200%",
+          "J": "300%",
+          "K": "400%"
+        }
+      },
+      {
+        "key": "TraderBuyPrices",
+        "code": "FB",
+        "default": "E",
+        "group": "Traders",
+        "label": "Buy Price",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "175%",
+          "I": "200%",
+          "J": "300%",
+          "K": "400%"
+        }
+      },
+      {
+        "key": "TraderBuyLimit",
+        "code": "FF",
+        "default": "D",
+        "group": "Traders",
+        "label": "Trader Buy Limit",
+        "choices": {
+          "A": "None",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6",
+          "H": "7",
+          "I": "8",
+          "J": "9",
+          "K": "10"
+        }
+      },
+      {
+        "key": "ChallengesEnabled",
+        "code": "FJ",
+        "default": "B",
+        "group": "Tasks",
+        "label": "Challenges",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "QuestsEnabled",
+        "code": "EO",
+        "default": "B",
+        "group": "Tasks",
+        "label": "Quests",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "IntroChallengesEnabled",
+        "code": "FK",
+        "default": "B",
+        "group": "Tasks",
+        "label": "Intro Challenges",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "IntroQuestEnabled",
+        "code": "EP",
+        "default": "B",
+        "group": "Tasks",
+        "label": "Intro Quest",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "TraderToTraderQuestsEnabled",
+        "code": "EQ",
+        "default": "B",
+        "group": "Tasks",
+        "label": "Trade Routes",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "BuriedQuestsEnabled",
+        "code": "EU",
+        "default": "B",
+        "group": "Tasks",
+        "label": "Buried Quests",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "POIQuestsEnabled",
+        "code": "EV",
+        "default": "B",
+        "group": "Tasks",
+        "label": "POI Quests",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "QuestsPerTier",
+        "code": "ES",
+        "default": "K",
+        "group": "Tasks",
+        "label": "Quests Per Tier",
+        "choices": {
+          "A": "None",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6",
+          "H": "7",
+          "I": "8",
+          "J": "9",
+          "K": "10",
+          "L": "11",
+          "M": "12",
+          "N": "13",
+          "O": "14",
+          "P": "15"
+        }
+      },
+      {
+        "key": "QuestProgressionDailyLimit",
+        "code": "ET",
+        "default": "E",
+        "group": "Tasks",
+        "label": "Quests Per Day",
+        "choices": {
+          "A": "Unlimited",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6",
+          "H": "7",
+          "I": "8",
+          "J": "9",
+          "K": "10"
+        }
+      },
+      {
+        "key": "StarterSkillPoints",
+        "code": "ER",
+        "default": "E",
+        "group": "Tasks",
+        "label": "Base Skill Points",
+        "choices": {
+          "A": "None",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6",
+          "H": "7",
+          "I": "8",
+          "J": "9",
+          "K": "10"
+        }
+      },
+      {
+        "key": "VehicleFuelUsage",
+        "code": "FL",
+        "default": "H",
+        "group": "Misc",
+        "label": "Vehicle Fuel Usage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "VehicleEntityDamage",
+        "code": "FM",
+        "default": "H",
+        "group": "Misc",
+        "label": "Vehicle Entity Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "VehicleBlockDamage",
+        "code": "FN",
+        "default": "H",
+        "group": "Misc",
+        "label": "Vehicle Block Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "VehicleSelfDamage",
+        "code": "FO",
+        "default": "H",
+        "group": "Misc",
+        "label": "Vehicle Self Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "ElectricalOutput",
+        "code": "FP",
+        "default": "D",
+        "group": "Misc",
+        "label": "Electrical Output",
+        "choices": {
+          "A": "25%",
+          "B": "50%",
+          "C": "75%",
+          "D": "100%",
+          "E": "125%",
+          "F": "150%",
+          "G": "200%",
+          "H": "300%"
+        }
+      },
+      {
+        "key": "SillyCelebrate",
+        "code": "FQ",
+        "default": "A",
+        "group": "Misc",
+        "label": "Celebrate Kills",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "Headshot Only"
+        }
+      },
+      {
+        "key": "SillyBigHeads",
+        "code": "FR",
+        "default": "A",
+        "group": "Misc",
+        "label": "Big Heads",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "SillyTinyZombies",
+        "code": "FS",
+        "default": "A",
+        "group": "Misc",
+        "label": "Tiny Zombies",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "SillyLowGravity",
+        "code": "FU",
+        "default": "F",
+        "group": "Misc",
+        "label": "Gravity",
+        "choices": {
+          "A": "50%",
+          "B": "60%",
+          "C": "70%",
+          "D": "80%",
+          "E": "90%",
+          "F": "100%"
+        }
+      },
+      {
+        "key": "SillySounds",
+        "code": "FT",
+        "default": "A",
+        "group": "Misc",
+        "label": "Silly Sounds",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "SillyBlackandWhite",
+        "code": "FV",
+        "default": "A",
+        "group": "Misc",
+        "label": "Black and White",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      }
+    ],
+    "3.0.1": "3.0.0",
+    "3.1.0": [
+      {
+        "key": "RangedDamage",
+        "code": "AA",
+        "default": "H",
+        "group": "Player",
+        "label": "Ranged Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "MeleeDamage",
+        "code": "AB",
+        "default": "H",
+        "group": "Player",
+        "label": "Melee Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "BlockDamage",
+        "code": "AC",
+        "default": "H",
+        "group": "Player",
+        "label": "Block Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "TerrainDamage",
+        "code": "AD",
+        "default": "H",
+        "group": "Player",
+        "label": "Terrain Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "HeadshotMultiplier",
+        "code": "AE",
+        "default": "H",
+        "group": "Player",
+        "label": "Headshot Multiplier",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "IncomingDamage",
+        "code": "AR",
+        "default": "H",
+        "group": "Player",
+        "label": "Player Damage In",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "WalkSpeed",
+        "code": "AG",
+        "default": "G",
+        "group": "Player",
+        "label": "Walk Speed",
+        "choices": {
+          "A": "25%",
+          "B": "50%",
+          "C": "60%",
+          "D": "70%",
+          "E": "80%",
+          "F": "90%",
+          "G": "100%",
+          "H": "110%",
+          "I": "120%",
+          "J": "130%",
+          "K": "140%",
+          "L": "150%",
+          "M": "200%",
+          "N": "300%"
+        }
+      },
+      {
+        "key": "RunSpeed",
+        "code": "AH",
+        "default": "H",
+        "group": "Player",
+        "label": "Run Speed",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "60%",
+          "E": "70%",
+          "F": "80%",
+          "G": "90%",
+          "H": "100%",
+          "I": "110%",
+          "J": "120%",
+          "K": "130%",
+          "L": "140%",
+          "M": "150%",
+          "N": "200%",
+          "O": "300%"
+        }
+      },
+      {
+        "key": "CrouchSpeed",
+        "code": "AF",
+        "default": "H",
+        "group": "Player",
+        "label": "Crouch Speed",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "60%",
+          "E": "70%",
+          "F": "80%",
+          "G": "90%",
+          "H": "100%",
+          "I": "110%",
+          "J": "120%",
+          "K": "130%",
+          "L": "140%",
+          "M": "150%",
+          "N": "200%",
+          "O": "300%"
+        }
+      },
+      {
+        "key": "CrouchRunSpeed",
+        "code": "EI",
+        "default": "H",
+        "group": "Player",
+        "label": "Crouch Run Speed",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "60%",
+          "E": "70%",
+          "F": "80%",
+          "G": "90%",
+          "H": "100%",
+          "I": "110%",
+          "J": "120%",
+          "K": "130%",
+          "L": "140%",
+          "M": "150%",
+          "N": "200%",
+          "O": "300%"
+        }
+      },
+      {
+        "key": "JumpStrength",
+        "code": "AI",
+        "default": "C",
+        "group": "Player",
+        "label": "Jump Strength",
+        "choices": {
+          "A": "None (0%)",
+          "B": "50%",
+          "C": "100%",
+          "D": "125%",
+          "E": "150%",
+          "F": "200%",
+          "G": "300%"
+        }
+      },
+      {
+        "key": "StaminaRegen",
+        "code": "AK",
+        "default": "D",
+        "group": "Player",
+        "label": "Stamina Regen",
+        "choices": {
+          "A": "25%",
+          "B": "50%",
+          "C": "75%",
+          "D": "100%",
+          "E": "125%",
+          "F": "150%",
+          "G": "200%",
+          "H": "300%"
+        }
+      },
+      {
+        "key": "StaminaUsage",
+        "code": "AJ",
+        "default": "E",
+        "group": "Player",
+        "label": "Stamina Usage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "175%",
+          "I": "200%"
+        }
+      },
+      {
+        "key": "XPMultiplier",
+        "code": "AS",
+        "default": "E",
+        "group": "Player",
+        "label": "XP Multiplier",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "175%",
+          "I": "200%",
+          "J": "300%",
+          "K": "500%"
+        }
+      },
+      {
+        "key": "ShowXP",
+        "code": "AT",
+        "default": "A",
+        "group": "Player",
+        "label": "Show XP",
+        "choices": {
+          "A": "All",
+          "B": "Bar Only",
+          "C": "Notifications Only",
+          "D": "None"
+        }
+      },
+      {
+        "key": "PlayerLevelBonusApplied",
+        "code": "AL",
+        "default": "B",
+        "group": "Player",
+        "label": "Level Stat Bonus",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "SkillGainRate",
+        "code": "EM",
+        "default": "A",
+        "group": "Player",
+        "label": "Skill Gain Rate",
+        "choices": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4",
+          "E": "5"
+        }
+      },
+      {
+        "key": "SkillPointsPerLevel",
+        "code": "EN",
+        "default": "B",
+        "group": "Player",
+        "label": "Skill Gain Amount",
+        "choices": {
+          "A": "None",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6",
+          "H": "7"
+        }
+      },
+      {
+        "key": "NewbieCoat",
+        "code": "AP",
+        "default": "B",
+        "group": "Player",
+        "label": "New Player Buff",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "DeathPenalty",
+        "code": "BA",
+        "default": "B",
+        "group": "Player",
+        "label": "Death Penalty",
+        "choices": {
+          "A": "None",
+          "B": "XP Only",
+          "C": "Injured",
+          "D": "Permanent Death"
+        }
+      },
+      {
+        "key": "LoseItemsOnDeathType",
+        "code": "AW",
+        "default": "A",
+        "group": "Player",
+        "label": "Lose On Death",
+        "choices": {
+          "A": "None",
+          "B": "All",
+          "C": "Toolbelt Only",
+          "D": "Backpack Only",
+          "E": "Equipment",
+          "F": "Carried Only"
+        }
+      },
+      {
+        "key": "LoseItemsOnDeathCount",
+        "code": "AX",
+        "default": "A",
+        "group": "Player",
+        "label": "Death Loss Count",
+        "choices": {
+          "A": "1-3",
+          "B": "1-5",
+          "C": "1-10",
+          "D": "1-20",
+          "E": "3-5",
+          "F": "5-7",
+          "G": "5-10",
+          "H": "7-10",
+          "I": "10-15",
+          "J": "15-20"
+        }
+      },
+      {
+        "key": "DegradeItemsOnDeath",
+        "code": "AY",
+        "default": "A",
+        "group": "Player",
+        "label": "Death Degradation",
+        "choices": {
+          "A": "None",
+          "B": "Durability",
+          "C": "Max Durability",
+          "D": "Both"
+        }
+      },
+      {
+        "key": "DegradeAmountOnDeath",
+        "code": "AZ",
+        "default": "C",
+        "group": "Player",
+        "label": "Death Degradation Amount",
+        "choices": {
+          "A": "None (0%)",
+          "B": "5%",
+          "C": "10%",
+          "D": "15%",
+          "E": "20%",
+          "F": "25%"
+        }
+      },
+      {
+        "key": "DropOnDeath",
+        "code": "BB",
+        "default": "B",
+        "group": "Player",
+        "label": "Drop On Death",
+        "choices": {
+          "A": "None",
+          "B": "All",
+          "C": "Toolbelt Only",
+          "D": "Backpack Only",
+          "E": "Equipment",
+          "F": "Carried Only",
+          "G": "Delete All"
+        }
+      },
+      {
+        "key": "DropOnQuit",
+        "code": "BC",
+        "default": "A",
+        "group": "Player",
+        "label": "Drop On Quit",
+        "choices": {
+          "A": "None",
+          "B": "All",
+          "C": "Toolbelt Only",
+          "D": "Backpack Only",
+          "E": "Equipment",
+          "F": "Carried Only"
+        }
+      },
+      {
+        "key": "HungerMultiplier",
+        "code": "GF",
+        "default": "E",
+        "group": "Player",
+        "label": "Hunger Multiplier",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "175%",
+          "I": "200%"
+        }
+      },
+      {
+        "key": "ThirstMultiplier",
+        "code": "GG",
+        "default": "E",
+        "group": "Player",
+        "label": "Thirst Multiplier",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "175%",
+          "I": "200%"
+        }
+      },
+      {
+        "key": "InfectionChance",
+        "code": "GE",
+        "default": "E",
+        "group": "Player",
+        "label": "Infection Chance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "InfectionRate",
+        "code": "BD",
+        "default": "E",
+        "group": "Player",
+        "label": "Infection Rate",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "StackSizeMultiplier",
+        "code": "GH",
+        "default": "D",
+        "group": "Player",
+        "label": "Stack Size Multiplier",
+        "choices": {
+          "A": "25%",
+          "B": "50%",
+          "C": "75%",
+          "D": "100%",
+          "E": "125%",
+          "F": "150%",
+          "G": "175%",
+          "H": "200%",
+          "I": "250%",
+          "J": "300%",
+          "K": "400%",
+          "L": "500%"
+        }
+      },
+      {
+        "key": "EncumbranceModifier",
+        "code": "AU",
+        "default": "C",
+        "group": "Player",
+        "label": "Encumbrance Slots",
+        "choices": {
+          "A": "Disabled (1000%)",
+          "B": "Low (135%)",
+          "C": "Default (100%)",
+          "D": "High (70%)",
+          "E": "Very High (35%)",
+          "F": "Full (0%)"
+        }
+      },
+      {
+        "key": "JarRefund",
+        "code": "AM",
+        "default": "H",
+        "group": "Player",
+        "label": "Jar Refund",
+        "choices": {
+          "A": "None (0%)",
+          "B": "5%",
+          "C": "10%",
+          "D": "20%",
+          "E": "30%",
+          "F": "40%",
+          "G": "50%",
+          "H": "60%",
+          "I": "70%",
+          "J": "80%",
+          "K": "90%",
+          "L": "100%"
+        }
+      },
+      {
+        "key": "EnemySpawnMode",
+        "code": "BE",
+        "default": "B",
+        "group": "Entities",
+        "label": "Enemy Spawning",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "MaxEnemyTier",
+        "code": "BR",
+        "default": "F",
+        "group": "Entities",
+        "label": "Max Enemy Tier",
+        "choices": {
+          "A": "Normals",
+          "B": "Strongs",
+          "C": "Specials",
+          "D": "Ferals",
+          "E": "Radiated",
+          "F": "Elites"
+        }
+      },
+      {
+        "key": "BiomeDayEnemyDensity",
+        "code": "BU",
+        "default": "B",
+        "group": "Entities",
+        "label": "Day Enemy Density",
+        "choices": {
+          "A": "None",
+          "B": "Default",
+          "C": "Very Low",
+          "D": "Low",
+          "E": "Medium",
+          "F": "High",
+          "G": "Very High"
+        }
+      },
+      {
+        "key": "BiomeDayZombieRespawn",
+        "code": "BS",
+        "default": "A",
+        "group": "Entities",
+        "label": "Day Enemy Respawn",
+        "choices": {
+          "A": "Default",
+          "B": "Very Slow",
+          "C": "Slow",
+          "D": "Normal",
+          "E": "Fast",
+          "F": "Very Fast"
+        }
+      },
+      {
+        "key": "BiomeDayAnimalDensity",
+        "code": "FZ",
+        "default": "B",
+        "group": "Entities",
+        "label": "Day Animal Density",
+        "choices": {
+          "A": "None",
+          "B": "Default",
+          "C": "Very Low",
+          "D": "Low",
+          "E": "Medium",
+          "F": "High",
+          "G": "Very High"
+        }
+      },
+      {
+        "key": "BiomeDayAnimalRespawn",
+        "code": "BT",
+        "default": "A",
+        "group": "Entities",
+        "label": "Day Animal Respawn",
+        "choices": {
+          "A": "Default",
+          "B": "Very Slow",
+          "C": "Slow",
+          "D": "Normal",
+          "E": "Fast",
+          "F": "Very Fast"
+        }
+      },
+      {
+        "key": "BiomeNightEnemyDensity",
+        "code": "GC",
+        "default": "B",
+        "group": "Entities",
+        "label": "Night Enemy Density",
+        "choices": {
+          "A": "None",
+          "B": "Default",
+          "C": "Very Low",
+          "D": "Low",
+          "E": "Medium",
+          "F": "High",
+          "G": "Very High"
+        }
+      },
+      {
+        "key": "BiomeNightZombieRespawn",
+        "code": "GA",
+        "default": "A",
+        "group": "Entities",
+        "label": "Night Enemy Respawn",
+        "choices": {
+          "A": "Default",
+          "B": "Very Slow",
+          "C": "Slow",
+          "D": "Normal",
+          "E": "Fast",
+          "F": "Very Fast"
+        }
+      },
+      {
+        "key": "BiomeNightAnimalDensity",
+        "code": "GD",
+        "default": "B",
+        "group": "Entities",
+        "label": "Night Animal Density",
+        "choices": {
+          "A": "None",
+          "B": "Default",
+          "C": "Very Low",
+          "D": "Low",
+          "E": "Medium",
+          "F": "High",
+          "G": "Very High"
+        }
+      },
+      {
+        "key": "BiomeNightAnimalRespawn",
+        "code": "GB",
+        "default": "A",
+        "group": "Entities",
+        "label": "Night Animal Respawn",
+        "choices": {
+          "A": "Default",
+          "B": "Very Slow",
+          "C": "Slow",
+          "D": "Normal",
+          "E": "Fast",
+          "F": "Very Fast"
+        }
+      },
+      {
+        "key": "EntityDamage",
+        "code": "BF",
+        "default": "H",
+        "group": "Entities",
+        "label": "Enemy Damage Dealt",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "EntityIncomingDamage",
+        "code": "BQ",
+        "default": "G",
+        "group": "Entities",
+        "label": "Entity Damage In",
+        "choices": {
+          "A": "25%",
+          "B": "35%",
+          "C": "50%",
+          "D": "65%",
+          "E": "75%",
+          "F": "85%",
+          "G": "100%",
+          "H": "125%",
+          "I": "150%",
+          "J": "200%",
+          "K": "250%",
+          "L": "300%"
+        }
+      },
+      {
+        "key": "BlockDamageAI",
+        "code": "BG",
+        "default": "H",
+        "group": "Entities",
+        "label": "Enemy Block Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "BlockDamageAIBM",
+        "code": "BH",
+        "default": "H",
+        "group": "Entities",
+        "label": "BM Block Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "HeadshotMode",
+        "code": "AQ",
+        "default": "A",
+        "group": "Entities",
+        "label": "Headshot Mode",
+        "choices": {
+          "A": "None",
+          "B": "Headshot Only",
+          "C": "Headshot Finisher"
+        }
+      },
+      {
+        "key": "ShowHealthBars",
+        "code": "AN",
+        "default": "A",
+        "group": "Entities",
+        "label": "Entity Health Bars",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "ShowEnemyDamage",
+        "code": "AO",
+        "default": "A",
+        "group": "Entities",
+        "label": "Show Entity Damage",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "ZombieMove",
+        "code": "BI",
+        "default": "A",
+        "group": "Entities",
+        "label": "Zombie Day Speed",
+        "choices": {
+          "A": "Walk",
+          "B": "Jog",
+          "C": "Run",
+          "D": "Sprint",
+          "E": "Nightmare"
+        }
+      },
+      {
+        "key": "ZombieMoveNight",
+        "code": "BJ",
+        "default": "D",
+        "group": "Entities",
+        "label": "Zombie Night Speed",
+        "choices": {
+          "A": "Walk",
+          "B": "Jog",
+          "C": "Run",
+          "D": "Sprint",
+          "E": "Nightmare"
+        }
+      },
+      {
+        "key": "ZombieFeralMove",
+        "code": "BK",
+        "default": "D",
+        "group": "Entities",
+        "label": "Zombie Feral Speed",
+        "choices": {
+          "A": "Walk",
+          "B": "Jog",
+          "C": "Run",
+          "D": "Sprint",
+          "E": "Nightmare"
+        }
+      },
+      {
+        "key": "ZombieBMMove",
+        "code": "BL",
+        "default": "D",
+        "group": "Entities",
+        "label": "Zombie BM Speed",
+        "choices": {
+          "A": "Walk",
+          "B": "Jog",
+          "C": "Run",
+          "D": "Sprint",
+          "E": "Nightmare"
+        }
+      },
+      {
+        "key": "ZombieFeralSense",
+        "code": "BM",
+        "default": "A",
+        "group": "Entities",
+        "label": "Zombie Feral Sense",
+        "choices": {
+          "A": "Disabled",
+          "B": "Day",
+          "C": "Night",
+          "D": "All"
+        }
+      },
+      {
+        "key": "AISmellMode",
+        "code": "BN",
+        "default": "D",
+        "group": "Entities",
+        "label": "AI Smell Mode",
+        "choices": {
+          "A": "None",
+          "B": "Walk",
+          "C": "Jog",
+          "D": "Run",
+          "E": "Sprint",
+          "F": "Nightmare"
+        }
+      },
+      {
+        "key": "ZombieRageChance",
+        "code": "BP",
+        "default": "B",
+        "group": "Entities",
+        "label": "Zombie Rage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "15%",
+          "C": "30%",
+          "D": "35%",
+          "E": "40%",
+          "F": "50%",
+          "G": "60%",
+          "H": "75%",
+          "I": "90%",
+          "J": "100%"
+        }
+      },
+      {
+        "key": "AllowZombieDigging",
+        "code": "BO",
+        "default": "B",
+        "group": "Entities",
+        "label": "Zombie Digging",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "ZombiesEatAnimals",
+        "code": "BV",
+        "default": "B",
+        "group": "Entities",
+        "label": "Zombies Eat Animals",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "GlobalGSModifier",
+        "code": "CI",
+        "default": "C",
+        "group": "World",
+        "label": "Global Game Stage",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "BiomeGSModifier",
+        "code": "CJ",
+        "default": "C",
+        "group": "World",
+        "label": "Biome Game Stage",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "BiomeProgression",
+        "code": "CD",
+        "default": "B",
+        "group": "World",
+        "label": "Biome Progression",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "TemperatureSurvival",
+        "code": "CE",
+        "default": "B",
+        "group": "World",
+        "label": "Temperature Survival",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "MaxTechType",
+        "code": "CW",
+        "default": "E",
+        "group": "World",
+        "label": "Max Tech Type",
+        "choices": {
+          "A": "None",
+          "B": "Tech 0",
+          "C": "Tech 1",
+          "D": "Tech 2",
+          "E": "Tech 3"
+        }
+      },
+      {
+        "key": "WorkstationsInTheWild",
+        "code": "CV",
+        "default": "A",
+        "group": "World",
+        "label": "Workstations In The Wild",
+        "choices": {
+          "A": "None (0%)",
+          "B": "5%",
+          "C": "10%",
+          "D": "20%",
+          "E": "30%",
+          "F": "40%",
+          "G": "50%",
+          "H": "60%",
+          "I": "70%",
+          "J": "80%",
+          "K": "90%",
+          "L": "100%"
+        }
+      },
+      {
+        "key": "BloodMoonFrequency",
+        "code": "BW",
+        "default": "H",
+        "group": "World",
+        "label": "Blood Moon Frequency",
+        "choices": {
+          "A": "Disabled",
+          "B": "1 Day",
+          "C": "2 Days",
+          "D": "3 Days",
+          "E": "4 Days",
+          "F": "5 Days",
+          "G": "6 Days",
+          "H": "7 Days",
+          "I": "8 Days",
+          "J": "9 Days",
+          "K": "10 Days",
+          "L": "14 Days",
+          "M": "20 Days",
+          "N": "30 Days"
+        }
+      },
+      {
+        "key": "BloodMoonRange",
+        "code": "BX",
+        "default": "A",
+        "group": "World",
+        "label": "Blood Moon Range",
+        "choices": {
+          "A": "0 Days",
+          "B": "1 Day",
+          "C": "2 Days",
+          "D": "3 Days",
+          "E": "4 Days",
+          "F": "7 Days",
+          "G": "10 Days",
+          "H": "14 Days",
+          "I": "20 Days"
+        }
+      },
+      {
+        "key": "BloodMoonEnemyCount",
+        "code": "BZ",
+        "default": "C",
+        "group": "World",
+        "label": "Blood Moon Count",
+        "choices": {
+          "A": "4 Enemies",
+          "B": "6 Enemies",
+          "C": "8 Enemies",
+          "D": "10 Enemies",
+          "E": "12 Enemies",
+          "F": "16 Enemies",
+          "G": "24 Enemies",
+          "H": "32 Enemies",
+          "I": "64 Enemies"
+        }
+      },
+      {
+        "key": "BloodMoonWarning",
+        "code": "BY",
+        "default": "B",
+        "group": "World",
+        "label": "Blood Moon Warning",
+        "choices": {
+          "A": "Disabled",
+          "B": "Morning",
+          "C": "Evening"
+        }
+      },
+      {
+        "key": "AirDropFrequency",
+        "code": "CA",
+        "default": "D",
+        "group": "World",
+        "label": "Air Drops",
+        "choices": {
+          "A": "Disabled",
+          "B": "Every Day",
+          "C": "1-3 Days",
+          "D": "3 Days",
+          "E": "3-7 Days",
+          "F": "7 Days",
+          "G": "1-7 Days"
+        }
+      },
+      {
+        "key": "AirDropRandomTime",
+        "code": "CC",
+        "default": "A",
+        "group": "World",
+        "label": "Air Drop Variance",
+        "choices": {
+          "A": "None",
+          "B": "Morning",
+          "C": "Mid Day",
+          "D": "Evening",
+          "E": "Night",
+          "F": "All Day",
+          "G": "Any"
+        }
+      },
+      {
+        "key": "StormFreq",
+        "code": "CF",
+        "default": "C",
+        "group": "World",
+        "label": "Storm Frequency",
+        "choices": {
+          "A": "None (0%)",
+          "B": "50%",
+          "C": "100%",
+          "D": "150%",
+          "E": "200%",
+          "F": "300%",
+          "G": "400%",
+          "H": "500%"
+        }
+      },
+      {
+        "key": "StormWarning",
+        "code": "CG",
+        "default": "B",
+        "group": "World",
+        "label": "Storm Warning",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "HeatMapSensitivity",
+        "code": "CH",
+        "default": "D",
+        "group": "World",
+        "label": "Heat Map Sensitivity",
+        "choices": {
+          "A": "Disabled (0%)",
+          "B": "Very Low (25%)",
+          "C": "Low (50%)",
+          "D": "Default (100%)",
+          "E": "High (150%)",
+          "F": "Very High (200%)"
+        }
+      },
+      {
+        "key": "DayNightLength",
+        "code": "CO",
+        "default": "F",
+        "group": "World",
+        "label": "24 Hour Cycle",
+        "choices": {
+          "A": "10",
+          "B": "20",
+          "C": "30",
+          "D": "40",
+          "E": "50",
+          "F": "60",
+          "G": "90",
+          "H": "120"
+        }
+      },
+      {
+        "key": "DayLightLength",
+        "code": "CP",
+        "default": "I",
+        "group": "World",
+        "label": "Daylight Length",
+        "choices": {
+          "A": "Always Night",
+          "B": "4",
+          "C": "6",
+          "D": "8",
+          "E": "10",
+          "F": "12",
+          "G": "14",
+          "H": "16",
+          "I": "18",
+          "J": "20",
+          "K": "Always Day"
+        }
+      },
+      {
+        "key": "AirDropMarker",
+        "code": "CB",
+        "default": "B",
+        "group": "World",
+        "label": "Mark Air Drops",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "AllowMap",
+        "code": "CQ",
+        "default": "B",
+        "group": "World",
+        "label": "Allow Map",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "AllowCompass",
+        "code": "CR",
+        "default": "B",
+        "group": "World",
+        "label": "Allow Compass",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "AllowScreenMarkers",
+        "code": "CS",
+        "default": "B",
+        "group": "World",
+        "label": "Allow Screen Markers",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "ShowLocationInfo",
+        "code": "CT",
+        "default": "B",
+        "group": "World",
+        "label": "Show Location Info",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "Name Only"
+        }
+      },
+      {
+        "key": "ShowDayTime",
+        "code": "CU",
+        "default": "B",
+        "group": "World",
+        "label": "Show Day/Time",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "LootMaxTier",
+        "code": "CZ",
+        "default": "F",
+        "group": "Resources",
+        "label": "Max Loot Quality",
+        "choices": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4",
+          "E": "5",
+          "F": "6"
+        }
+      },
+      {
+        "key": "GlobalLSModifier",
+        "code": "CK",
+        "default": "C",
+        "group": "Resources",
+        "label": "Global Loot Stage",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "BiomeLSModifier",
+        "code": "CL",
+        "default": "C",
+        "group": "Resources",
+        "label": "Biome Loot Stage",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "POITierLSModifier",
+        "code": "CM",
+        "default": "C",
+        "group": "Resources",
+        "label": "POI Loot Stage",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "LootRespawnDays",
+        "code": "CX",
+        "default": "C",
+        "group": "Resources",
+        "label": "Loot Respawn Days",
+        "choices": {
+          "A": "Disabled",
+          "B": "5",
+          "C": "7",
+          "D": "10",
+          "E": "15",
+          "F": "20",
+          "G": "30",
+          "H": "40",
+          "I": "50"
+        }
+      },
+      {
+        "key": "LootTimer",
+        "code": "CY",
+        "default": "E",
+        "group": "Resources",
+        "label": "Loot Timer",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "LootBagChance",
+        "code": "DM",
+        "default": "H",
+        "group": "Resources",
+        "label": "Loot Bag Drop",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "GlobalLootCount",
+        "code": "DA",
+        "default": "H",
+        "group": "Resources",
+        "label": "Loot Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "FoodLootCount",
+        "code": "DB",
+        "default": "H",
+        "group": "Resources",
+        "label": "Food Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "DrinkLootCount",
+        "code": "DC",
+        "default": "H",
+        "group": "Resources",
+        "label": "Drink Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "MedicalLootCount",
+        "code": "DD",
+        "default": "H",
+        "group": "Resources",
+        "label": "Medical Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "AmmoLootCount",
+        "code": "DE",
+        "default": "H",
+        "group": "Resources",
+        "label": "Ammo Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "ResourceLootCount",
+        "code": "DF",
+        "default": "H",
+        "group": "Resources",
+        "label": "Resource Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "ArmorLootCount",
+        "code": "DG",
+        "default": "H",
+        "group": "Resources",
+        "label": "Armor Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "MeleeLootCount",
+        "code": "DH",
+        "default": "H",
+        "group": "Resources",
+        "label": "Melee Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "RangedLootCount",
+        "code": "DI",
+        "default": "H",
+        "group": "Resources",
+        "label": "Ranged Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "DukesLootCount",
+        "code": "DJ",
+        "default": "H",
+        "group": "Resources",
+        "label": "Currency Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "CraftingMagazinesLootCount",
+        "code": "DK",
+        "default": "H",
+        "group": "Resources",
+        "label": "Magazine Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "BookLootCount",
+        "code": "EH",
+        "default": "H",
+        "group": "Resources",
+        "label": "Book Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "TreasureMapChance",
+        "code": "DL",
+        "default": "H",
+        "group": "Resources",
+        "label": "Treasure Map Chance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "60%",
+          "E": "70%",
+          "F": "80%",
+          "G": "90%",
+          "H": "100%",
+          "I": "110%",
+          "J": "120%",
+          "K": "130%",
+          "L": "140%",
+          "M": "150%",
+          "N": "200%",
+          "O": "300%"
+        }
+      },
+      {
+        "key": "MiningOutput",
+        "code": "DX",
+        "default": "H",
+        "group": "Resources",
+        "label": "Mining Yield",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "CropOutput",
+        "code": "DN",
+        "default": "H",
+        "group": "Resources",
+        "label": "Crop Yield",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "SeedDropOutput",
+        "code": "DO",
+        "default": "H",
+        "group": "Resources",
+        "label": "Seed Drop",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "HarvestingOutput",
+        "code": "DY",
+        "default": "H",
+        "group": "Resources",
+        "label": "Resource Yield",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "CropGrowthSpeed",
+        "code": "DP",
+        "default": "F",
+        "group": "Resources",
+        "label": "Crop Growth",
+        "choices": {
+          "A": "None (100000%)",
+          "B": "Instant (0%)",
+          "C": "20%",
+          "D": "50%",
+          "E": "75%",
+          "F": "100%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "CraftingProgression",
+        "code": "DS",
+        "default": "B",
+        "group": "Crafting",
+        "label": "Crafting Progression",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "CraftingMaxTier",
+        "code": "DW",
+        "default": "F",
+        "group": "Crafting",
+        "label": "Crafting Max Quality",
+        "choices": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4",
+          "E": "5",
+          "F": "6"
+        }
+      },
+      {
+        "key": "PointsPerMagazine",
+        "code": "EL",
+        "default": "B",
+        "group": "Crafting",
+        "label": "Magazine Progress",
+        "choices": {
+          "A": "None",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6",
+          "H": "7"
+        }
+      },
+      {
+        "key": "BackpackCrafting",
+        "code": "DQ",
+        "default": "B",
+        "group": "Crafting",
+        "label": "Backpack Crafting",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "Limited",
+          "D": "Workbench Only"
+        }
+      },
+      {
+        "key": "WorkstationCrafting",
+        "code": "DR",
+        "default": "B",
+        "group": "Crafting",
+        "label": "Workstation Crafting",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "SmeltingType",
+        "code": "EA",
+        "default": "A",
+        "group": "Crafting",
+        "label": "Smelter Type",
+        "choices": {
+          "A": "Smelter",
+          "B": "Recipes"
+        }
+      },
+      {
+        "key": "CraftingTime",
+        "code": "DT",
+        "default": "E",
+        "group": "Crafting",
+        "label": "Crafting Timer",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "CraftingInput",
+        "code": "DU",
+        "default": "E",
+        "group": "Crafting",
+        "label": "Crafting Cost",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "CraftingOutput",
+        "code": "DV",
+        "default": "D",
+        "group": "Crafting",
+        "label": "Crafting Yield",
+        "choices": {
+          "A": "25%",
+          "B": "50%",
+          "C": "75%",
+          "D": "100%",
+          "E": "125%",
+          "F": "150%",
+          "G": "200%",
+          "H": "300%"
+        }
+      },
+      {
+        "key": "ScrappingOutput",
+        "code": "DZ",
+        "default": "E",
+        "group": "Crafting",
+        "label": "Scrapping Yield",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "DewCollectorTime",
+        "code": "EB",
+        "default": "E",
+        "group": "Crafting",
+        "label": "Dew Collector Time",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "DewCollectorOutput",
+        "code": "EC",
+        "default": "A",
+        "group": "Crafting",
+        "label": "Dew Collector Yield",
+        "choices": {
+          "A": "100%",
+          "B": "200%",
+          "C": "300%",
+          "D": "400%",
+          "E": "500%"
+        }
+      },
+      {
+        "key": "DewCollectorInput",
+        "code": "ED",
+        "default": "B",
+        "group": "Crafting",
+        "label": "Dew Collector Input",
+        "choices": {
+          "A": "None (0%)",
+          "B": "100%",
+          "C": "200%",
+          "D": "300%"
+        }
+      },
+      {
+        "key": "ApiaryTime",
+        "code": "EE",
+        "default": "E",
+        "group": "Crafting",
+        "label": "Apiary Time",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "ApiaryOutput",
+        "code": "EF",
+        "default": "A",
+        "group": "Crafting",
+        "label": "Apiary Yield",
+        "choices": {
+          "A": "100%",
+          "B": "200%",
+          "C": "300%",
+          "D": "400%",
+          "E": "500%"
+        }
+      },
+      {
+        "key": "ApiaryInput",
+        "code": "EG",
+        "default": "F",
+        "group": "Crafting",
+        "label": "Apiary Input",
+        "choices": {
+          "A": "None (0%)",
+          "B": "20%",
+          "C": "40%",
+          "D": "60%",
+          "E": "80%",
+          "F": "100%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "ChickenCoopTime",
+        "code": "FW",
+        "default": "E",
+        "group": "Crafting",
+        "label": "Chicken Coop Time",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "ChickenCoopOutput",
+        "code": "FX",
+        "default": "A",
+        "group": "Crafting",
+        "label": "Chicken Coop Yield",
+        "choices": {
+          "A": "100%",
+          "B": "200%",
+          "C": "300%",
+          "D": "400%",
+          "E": "500%"
+        }
+      },
+      {
+        "key": "ChickenCoopInput",
+        "code": "FY",
+        "default": "F",
+        "group": "Crafting",
+        "label": "Chicken Coop Input",
+        "choices": {
+          "A": "None (0%)",
+          "B": "20%",
+          "C": "40%",
+          "D": "60%",
+          "E": "80%",
+          "F": "100%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "FullChickenStressEvent",
+        "code": "GI",
+        "default": "B",
+        "group": "Crafting",
+        "label": "Chicken Stress Event",
+        "choices": {
+          "A": "None",
+          "B": "Random",
+          "C": "Chicken Drop",
+          "D": "Angry Chicken",
+          "E": "Zombie Horde",
+          "F": "Murder Chickens"
+        }
+      },
+      {
+        "key": "ItemDegradation",
+        "code": "AV",
+        "default": "D",
+        "group": "Crafting",
+        "label": "Item Degradation",
+        "choices": {
+          "A": "Disabled (0%)",
+          "B": "Very Low (25%)",
+          "C": "Low (50%)",
+          "D": "Default (100%)",
+          "E": "High (150%)",
+          "F": "Very High (200%)"
+        }
+      },
+      {
+        "key": "RepairTypes",
+        "code": "EJ",
+        "default": "D",
+        "group": "Crafting",
+        "label": "Repair Method",
+        "choices": {
+          "A": "None",
+          "B": "Repair Only",
+          "C": "Combine Only",
+          "D": "Both"
+        }
+      },
+      {
+        "key": "MaxDegradationAmount",
+        "code": "EK",
+        "default": "A",
+        "group": "Crafting",
+        "label": "Repair Degradation",
+        "choices": {
+          "A": "None (0%)",
+          "B": "5%",
+          "C": "10%",
+          "D": "15%",
+          "E": "20%",
+          "F": "25%"
+        }
+      },
+      {
+        "key": "TradersEnabled",
+        "code": "EY",
+        "default": "B",
+        "group": "Traders",
+        "label": "Trading Enabled",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "VendingEnabled",
+        "code": "EZ",
+        "default": "B",
+        "group": "Traders",
+        "label": "Vending Enabled",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "TraderHours",
+        "code": "EX",
+        "default": "A",
+        "group": "Traders",
+        "label": "Trader Hours",
+        "choices": {
+          "A": "Default",
+          "B": "Morning",
+          "C": "Mid Day",
+          "D": "Evening",
+          "E": "Night",
+          "F": "BM Closed",
+          "G": "Always Open"
+        }
+      },
+      {
+        "key": "TraderProtection",
+        "code": "FC",
+        "default": "A",
+        "group": "Traders",
+        "label": "Trader Protection",
+        "choices": {
+          "A": "Yes",
+          "B": "Claimable",
+          "C": "Not Claimable"
+        }
+      },
+      {
+        "key": "TraderDialog",
+        "code": "EW",
+        "default": "B",
+        "group": "Traders",
+        "label": "Trading Dialog",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "GlobalTSModifier",
+        "code": "CN",
+        "default": "C",
+        "group": "Traders",
+        "label": "Global Trader Stage",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "TraderMaxTier",
+        "code": "FG",
+        "default": "F",
+        "group": "Traders",
+        "label": "Trader Max Quality",
+        "choices": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4",
+          "E": "5",
+          "F": "6"
+        }
+      },
+      {
+        "key": "TraderItemAbundance",
+        "code": "FE",
+        "default": "C",
+        "group": "Traders",
+        "label": "Trader Item Count",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "VendingItemAbundance",
+        "code": "FI",
+        "default": "C",
+        "group": "Traders",
+        "label": "Vending Item Count",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "TraderResetInterval",
+        "code": "FD",
+        "default": "A",
+        "group": "Traders",
+        "label": "Trader Reset",
+        "choices": {
+          "A": "Default",
+          "B": "1 Day",
+          "C": "2 Days",
+          "D": "3 Days",
+          "E": "4 Days",
+          "F": "5 Days",
+          "G": "6 Days",
+          "H": "7 Days",
+          "I": "14 Days"
+        }
+      },
+      {
+        "key": "VendingResetInterval",
+        "code": "FH",
+        "default": "A",
+        "group": "Traders",
+        "label": "Vending Reset",
+        "choices": {
+          "A": "Default",
+          "B": "1 Day",
+          "C": "2 Days",
+          "D": "3 Days",
+          "E": "4 Days",
+          "F": "5 Days",
+          "G": "6 Days",
+          "H": "7 Days",
+          "I": "14 Days"
+        }
+      },
+      {
+        "key": "TraderSellPrices",
+        "code": "FA",
+        "default": "E",
+        "group": "Traders",
+        "label": "Sell Price",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "175%",
+          "I": "200%",
+          "J": "300%",
+          "K": "400%"
+        }
+      },
+      {
+        "key": "TraderBuyPrices",
+        "code": "FB",
+        "default": "E",
+        "group": "Traders",
+        "label": "Buy Price",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "175%",
+          "I": "200%",
+          "J": "300%",
+          "K": "400%"
+        }
+      },
+      {
+        "key": "TraderBuyLimit",
+        "code": "FF",
+        "default": "D",
+        "group": "Traders",
+        "label": "Trader Buy Limit",
+        "choices": {
+          "A": "None",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6",
+          "H": "7",
+          "I": "8",
+          "J": "9",
+          "K": "10"
+        }
+      },
+      {
+        "key": "ChallengesEnabled",
+        "code": "FJ",
+        "default": "B",
+        "group": "Tasks",
+        "label": "Challenges",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "QuestsEnabled",
+        "code": "EO",
+        "default": "B",
+        "group": "Tasks",
+        "label": "Quests",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "IntroChallengesEnabled",
+        "code": "FK",
+        "default": "B",
+        "group": "Tasks",
+        "label": "Intro Challenges",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "IntroQuestEnabled",
+        "code": "EP",
+        "default": "B",
+        "group": "Tasks",
+        "label": "Intro Quest",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "TraderToTraderQuestsEnabled",
+        "code": "EQ",
+        "default": "B",
+        "group": "Tasks",
+        "label": "Trade Routes",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "BuriedQuestsEnabled",
+        "code": "EU",
+        "default": "B",
+        "group": "Tasks",
+        "label": "Buried Quests",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "POIQuestsEnabled",
+        "code": "EV",
+        "default": "B",
+        "group": "Tasks",
+        "label": "POI Quests",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "QuestsPerTier",
+        "code": "ES",
+        "default": "K",
+        "group": "Tasks",
+        "label": "Quests Per Tier",
+        "choices": {
+          "A": "None",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6",
+          "H": "7",
+          "I": "8",
+          "J": "9",
+          "K": "10",
+          "L": "11",
+          "M": "12",
+          "N": "13",
+          "O": "14",
+          "P": "15"
+        }
+      },
+      {
+        "key": "QuestProgressionDailyLimit",
+        "code": "ET",
+        "default": "E",
+        "group": "Tasks",
+        "label": "Quests Per Day",
+        "choices": {
+          "A": "Unlimited",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6",
+          "H": "7",
+          "I": "8",
+          "J": "9",
+          "K": "10"
+        }
+      },
+      {
+        "key": "StarterSkillPoints",
+        "code": "ER",
+        "default": "E",
+        "group": "Tasks",
+        "label": "Base Skill Points",
+        "choices": {
+          "A": "None",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6",
+          "H": "7",
+          "I": "8",
+          "J": "9",
+          "K": "10"
+        }
+      },
+      {
+        "key": "VehicleFuelUsage",
+        "code": "FL",
+        "default": "H",
+        "group": "Misc",
+        "label": "Vehicle Fuel Usage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "VehicleEntityDamage",
+        "code": "FM",
+        "default": "H",
+        "group": "Misc",
+        "label": "Vehicle Entity Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "VehicleBlockDamage",
+        "code": "FN",
+        "default": "H",
+        "group": "Misc",
+        "label": "Vehicle Block Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "VehicleSelfDamage",
+        "code": "FO",
+        "default": "H",
+        "group": "Misc",
+        "label": "Vehicle Self Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "ElectricalOutput",
+        "code": "FP",
+        "default": "D",
+        "group": "Misc",
+        "label": "Electrical Output",
+        "choices": {
+          "A": "25%",
+          "B": "50%",
+          "C": "75%",
+          "D": "100%",
+          "E": "125%",
+          "F": "150%",
+          "G": "200%",
+          "H": "300%"
+        }
+      },
+      {
+        "key": "SillyCelebrate",
+        "code": "FQ",
+        "default": "A",
+        "group": "Misc",
+        "label": "Celebrate Kills",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "Headshot Only"
+        }
+      },
+      {
+        "key": "SillyBigHeads",
+        "code": "FR",
+        "default": "A",
+        "group": "Misc",
+        "label": "Big Heads",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "SillyTinyZombies",
+        "code": "FS",
+        "default": "A",
+        "group": "Misc",
+        "label": "Tiny Zombies",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "SillyLowGravity",
+        "code": "FU",
+        "default": "F",
+        "group": "Misc",
+        "label": "Gravity",
+        "choices": {
+          "A": "50%",
+          "B": "60%",
+          "C": "70%",
+          "D": "80%",
+          "E": "90%",
+          "F": "100%"
+        }
+      },
+      {
+        "key": "SillySounds",
+        "code": "FT",
+        "default": "A",
+        "group": "Misc",
+        "label": "Silly Sounds",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "SillyBlackandWhite",
+        "code": "FV",
+        "default": "A",
+        "group": "Misc",
+        "label": "Black and White",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      }
+    ],
+    "3.2.0": [
+      {
+        "key": "RangedDamage",
+        "code": "AA",
+        "default": "H",
+        "group": "Player",
+        "label": "Ranged Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "MeleeDamage",
+        "code": "AB",
+        "default": "H",
+        "group": "Player",
+        "label": "Melee Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "BlockDamage",
+        "code": "AC",
+        "default": "H",
+        "group": "Player",
+        "label": "Block Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "TerrainDamage",
+        "code": "AD",
+        "default": "H",
+        "group": "Player",
+        "label": "Terrain Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "HeadshotMultiplier",
+        "code": "AE",
+        "default": "H",
+        "group": "Player",
+        "label": "Headshot Multiplier",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "IncomingDamage",
+        "code": "AR",
+        "default": "H",
+        "group": "Player",
+        "label": "Player Damage In",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "WalkSpeed",
+        "code": "AG",
+        "default": "G",
+        "group": "Player",
+        "label": "Walk Speed",
+        "choices": {
+          "A": "25%",
+          "B": "50%",
+          "C": "60%",
+          "D": "70%",
+          "E": "80%",
+          "F": "90%",
+          "G": "100%",
+          "H": "110%",
+          "I": "120%",
+          "J": "130%",
+          "K": "140%",
+          "L": "150%",
+          "M": "200%",
+          "N": "300%"
+        }
+      },
+      {
+        "key": "RunSpeed",
+        "code": "AH",
+        "default": "H",
+        "group": "Player",
+        "label": "Run Speed",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "60%",
+          "E": "70%",
+          "F": "80%",
+          "G": "90%",
+          "H": "100%",
+          "I": "110%",
+          "J": "120%",
+          "K": "130%",
+          "L": "140%",
+          "M": "150%",
+          "N": "200%",
+          "O": "300%"
+        }
+      },
+      {
+        "key": "CrouchSpeed",
+        "code": "AF",
+        "default": "H",
+        "group": "Player",
+        "label": "Crouch Speed",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "60%",
+          "E": "70%",
+          "F": "80%",
+          "G": "90%",
+          "H": "100%",
+          "I": "110%",
+          "J": "120%",
+          "K": "130%",
+          "L": "140%",
+          "M": "150%",
+          "N": "200%",
+          "O": "300%"
+        }
+      },
+      {
+        "key": "CrouchRunSpeed",
+        "code": "EI",
+        "default": "H",
+        "group": "Player",
+        "label": "Crouch Run Speed",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "60%",
+          "E": "70%",
+          "F": "80%",
+          "G": "90%",
+          "H": "100%",
+          "I": "110%",
+          "J": "120%",
+          "K": "130%",
+          "L": "140%",
+          "M": "150%",
+          "N": "200%",
+          "O": "300%"
+        }
+      },
+      {
+        "key": "JumpStrength",
+        "code": "AI",
+        "default": "C",
+        "group": "Player",
+        "label": "Jump Strength",
+        "choices": {
+          "A": "None (0%)",
+          "B": "50%",
+          "C": "100%",
+          "D": "125%",
+          "E": "150%",
+          "F": "200%",
+          "G": "300%"
+        }
+      },
+      {
+        "key": "StaminaRegen",
+        "code": "AK",
+        "default": "D",
+        "group": "Player",
+        "label": "Stamina Regen",
+        "choices": {
+          "A": "25%",
+          "B": "50%",
+          "C": "75%",
+          "D": "100%",
+          "E": "125%",
+          "F": "150%",
+          "G": "200%",
+          "H": "300%"
+        }
+      },
+      {
+        "key": "StaminaUsage",
+        "code": "AJ",
+        "default": "E",
+        "group": "Player",
+        "label": "Stamina Usage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "175%",
+          "I": "200%"
+        }
+      },
+      {
+        "key": "XPMultiplier",
+        "code": "AS",
+        "default": "E",
+        "group": "Player",
+        "label": "XP Multiplier",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "175%",
+          "I": "200%",
+          "J": "300%",
+          "K": "500%"
+        }
+      },
+      {
+        "key": "ShowXP",
+        "code": "AT",
+        "default": "A",
+        "group": "Player",
+        "label": "Show XP",
+        "choices": {
+          "A": "All",
+          "B": "Bar Only",
+          "C": "Notifications Only",
+          "D": "None"
+        }
+      },
+      {
+        "key": "PlayerLevelBonusApplied",
+        "code": "AL",
+        "default": "B",
+        "group": "Player",
+        "label": "Level Stat Bonus",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "SkillGainRate",
+        "code": "EM",
+        "default": "A",
+        "group": "Player",
+        "label": "Skill Gain Rate",
+        "choices": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4",
+          "E": "5"
+        }
+      },
+      {
+        "key": "SkillPointsPerLevel",
+        "code": "EN",
+        "default": "B",
+        "group": "Player",
+        "label": "Skill Gain Amount",
+        "choices": {
+          "A": "None",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6",
+          "H": "7"
+        }
+      },
+      {
+        "key": "NewbieCoat",
+        "code": "AP",
+        "default": "B",
+        "group": "Player",
+        "label": "New Player Buff",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "DeathPenalty",
+        "code": "BA",
+        "default": "B",
+        "group": "Player",
+        "label": "Death Penalty",
+        "choices": {
+          "A": "None",
+          "B": "XP Only",
+          "C": "Injured",
+          "D": "Permanent Death"
+        }
+      },
+      {
+        "key": "LoseItemsOnDeathType",
+        "code": "AW",
+        "default": "A",
+        "group": "Player",
+        "label": "Lose On Death",
+        "choices": {
+          "A": "None",
+          "B": "All",
+          "C": "Toolbelt Only",
+          "D": "Backpack Only",
+          "E": "Equipment",
+          "F": "Carried Only"
+        }
+      },
+      {
+        "key": "LoseItemsOnDeathCount",
+        "code": "AX",
+        "default": "A",
+        "group": "Player",
+        "label": "Death Loss Count",
+        "choices": {
+          "A": "1-3",
+          "B": "1-5",
+          "C": "1-10",
+          "D": "1-20",
+          "E": "3-5",
+          "F": "5-7",
+          "G": "5-10",
+          "H": "7-10",
+          "I": "10-15",
+          "J": "15-20"
+        }
+      },
+      {
+        "key": "DegradeItemsOnDeath",
+        "code": "AY",
+        "default": "A",
+        "group": "Player",
+        "label": "Death Degradation",
+        "choices": {
+          "A": "None",
+          "B": "Durability",
+          "C": "Max Durability",
+          "D": "Both"
+        }
+      },
+      {
+        "key": "DegradeAmountOnDeath",
+        "code": "AZ",
+        "default": "C",
+        "group": "Player",
+        "label": "Death Degradation Amount",
+        "choices": {
+          "A": "None (0%)",
+          "B": "5%",
+          "C": "10%",
+          "D": "15%",
+          "E": "20%",
+          "F": "25%"
+        }
+      },
+      {
+        "key": "DropOnDeath",
+        "code": "BB",
+        "default": "B",
+        "group": "Player",
+        "label": "Drop On Death",
+        "choices": {
+          "A": "None",
+          "B": "All",
+          "C": "Toolbelt Only",
+          "D": "Backpack Only",
+          "E": "Equipment",
+          "F": "Carried Only",
+          "G": "Delete All"
+        }
+      },
+      {
+        "key": "DropOnQuit",
+        "code": "BC",
+        "default": "A",
+        "group": "Player",
+        "label": "Drop On Quit",
+        "choices": {
+          "A": "None",
+          "B": "All",
+          "C": "Toolbelt Only",
+          "D": "Backpack Only",
+          "E": "Equipment",
+          "F": "Carried Only"
+        }
+      },
+      {
+        "key": "HungerMultiplier",
+        "code": "GF",
+        "default": "E",
+        "group": "Player",
+        "label": "Hunger Multiplier",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "175%",
+          "I": "200%"
+        }
+      },
+      {
+        "key": "ThirstMultiplier",
+        "code": "GG",
+        "default": "E",
+        "group": "Player",
+        "label": "Thirst Multiplier",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "175%",
+          "I": "200%"
+        }
+      },
+      {
+        "key": "InfectionChance",
+        "code": "GE",
+        "default": "E",
+        "group": "Player",
+        "label": "Infection Chance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "InfectionRate",
+        "code": "BD",
+        "default": "E",
+        "group": "Player",
+        "label": "Infection Rate",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "StackSizeMultiplier",
+        "code": "GH",
+        "default": "D",
+        "group": "Player",
+        "label": "Stack Size Multiplier",
+        "choices": {
+          "A": "25%",
+          "B": "50%",
+          "C": "75%",
+          "D": "100%",
+          "E": "125%",
+          "F": "150%",
+          "G": "175%",
+          "H": "200%",
+          "I": "250%",
+          "J": "300%",
+          "K": "400%",
+          "L": "500%"
+        }
+      },
+      {
+        "key": "EncumbranceModifier",
+        "code": "AU",
+        "default": "C",
+        "group": "Player",
+        "label": "Encumbrance Slots",
+        "choices": {
+          "A": "Disabled (1000%)",
+          "B": "Low (135%)",
+          "C": "Default (100%)",
+          "D": "High (70%)",
+          "E": "Very High (35%)",
+          "F": "Full (0%)"
+        }
+      },
+      {
+        "key": "JarRefund",
+        "code": "AM",
+        "default": "H",
+        "group": "Player",
+        "label": "Jar Refund",
+        "choices": {
+          "A": "None (0%)",
+          "B": "5%",
+          "C": "10%",
+          "D": "20%",
+          "E": "30%",
+          "F": "40%",
+          "G": "50%",
+          "H": "60%",
+          "I": "70%",
+          "J": "80%",
+          "K": "90%",
+          "L": "100%"
+        }
+      },
+      {
+        "key": "EnemySpawnMode",
+        "code": "BE",
+        "default": "B",
+        "group": "Entities",
+        "label": "Enemy Spawning",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "MaxEnemyTier",
+        "code": "BR",
+        "default": "F",
+        "group": "Entities",
+        "label": "Max Enemy Tier",
+        "choices": {
+          "A": "Normals",
+          "B": "Strongs",
+          "C": "Specials",
+          "D": "Ferals",
+          "E": "Radiated",
+          "F": "Elites"
+        }
+      },
+      {
+        "key": "BiomeDayEnemyDensity",
+        "code": "BU",
+        "default": "B",
+        "group": "Entities",
+        "label": "Day Enemy Density",
+        "choices": {
+          "A": "None",
+          "B": "Default",
+          "C": "Very Low",
+          "D": "Low",
+          "E": "Medium",
+          "F": "High",
+          "G": "Very High"
+        }
+      },
+      {
+        "key": "BiomeDayZombieRespawn",
+        "code": "BS",
+        "default": "A",
+        "group": "Entities",
+        "label": "Day Enemy Respawn",
+        "choices": {
+          "A": "Default",
+          "B": "Very Slow",
+          "C": "Slow",
+          "D": "Normal",
+          "E": "Fast",
+          "F": "Very Fast"
+        }
+      },
+      {
+        "key": "BiomeDayAnimalDensity",
+        "code": "FZ",
+        "default": "B",
+        "group": "Entities",
+        "label": "Day Animal Density",
+        "choices": {
+          "A": "None",
+          "B": "Default",
+          "C": "Very Low",
+          "D": "Low",
+          "E": "Medium",
+          "F": "High",
+          "G": "Very High"
+        }
+      },
+      {
+        "key": "BiomeDayAnimalRespawn",
+        "code": "BT",
+        "default": "A",
+        "group": "Entities",
+        "label": "Day Animal Respawn",
+        "choices": {
+          "A": "Default",
+          "B": "Very Slow",
+          "C": "Slow",
+          "D": "Normal",
+          "E": "Fast",
+          "F": "Very Fast"
+        }
+      },
+      {
+        "key": "BiomeNightEnemyDensity",
+        "code": "GC",
+        "default": "B",
+        "group": "Entities",
+        "label": "Night Enemy Density",
+        "choices": {
+          "A": "None",
+          "B": "Default",
+          "C": "Very Low",
+          "D": "Low",
+          "E": "Medium",
+          "F": "High",
+          "G": "Very High"
+        }
+      },
+      {
+        "key": "BiomeNightZombieRespawn",
+        "code": "GA",
+        "default": "A",
+        "group": "Entities",
+        "label": "Night Enemy Respawn",
+        "choices": {
+          "A": "Default",
+          "B": "Very Slow",
+          "C": "Slow",
+          "D": "Normal",
+          "E": "Fast",
+          "F": "Very Fast"
+        }
+      },
+      {
+        "key": "BiomeNightAnimalDensity",
+        "code": "GD",
+        "default": "B",
+        "group": "Entities",
+        "label": "Night Animal Density",
+        "choices": {
+          "A": "None",
+          "B": "Default",
+          "C": "Very Low",
+          "D": "Low",
+          "E": "Medium",
+          "F": "High",
+          "G": "Very High"
+        }
+      },
+      {
+        "key": "BiomeNightAnimalRespawn",
+        "code": "GB",
+        "default": "A",
+        "group": "Entities",
+        "label": "Night Animal Respawn",
+        "choices": {
+          "A": "Default",
+          "B": "Very Slow",
+          "C": "Slow",
+          "D": "Normal",
+          "E": "Fast",
+          "F": "Very Fast"
+        }
+      },
+      {
+        "key": "EntityDamage",
+        "code": "BF",
+        "default": "H",
+        "group": "Entities",
+        "label": "Enemy Damage Dealt",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "EntityIncomingDamage",
+        "code": "BQ",
+        "default": "G",
+        "group": "Entities",
+        "label": "Entity Damage In",
+        "choices": {
+          "A": "25%",
+          "B": "35%",
+          "C": "50%",
+          "D": "65%",
+          "E": "75%",
+          "F": "85%",
+          "G": "100%",
+          "H": "125%",
+          "I": "150%",
+          "J": "200%",
+          "K": "250%",
+          "L": "300%"
+        }
+      },
+      {
+        "key": "BlockDamageAI",
+        "code": "BG",
+        "default": "H",
+        "group": "Entities",
+        "label": "Enemy Block Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "BlockDamageAIBM",
+        "code": "BH",
+        "default": "H",
+        "group": "Entities",
+        "label": "BM Block Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "HeadshotMode",
+        "code": "AQ",
+        "default": "A",
+        "group": "Entities",
+        "label": "Headshot Mode",
+        "choices": {
+          "A": "None",
+          "B": "Headshot Only",
+          "C": "Headshot Finisher"
+        }
+      },
+      {
+        "key": "ShowHealthBars",
+        "code": "AN",
+        "default": "A",
+        "group": "Entities",
+        "label": "Entity Health Bars",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "ShowEnemyDamage",
+        "code": "AO",
+        "default": "A",
+        "group": "Entities",
+        "label": "Show Entity Damage",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "ZombieMove",
+        "code": "BI",
+        "default": "A",
+        "group": "Entities",
+        "label": "Zombie Day Speed",
+        "choices": {
+          "A": "Walk",
+          "B": "Jog",
+          "C": "Run",
+          "D": "Sprint",
+          "E": "Nightmare"
+        }
+      },
+      {
+        "key": "ZombieMoveNight",
+        "code": "BJ",
+        "default": "D",
+        "group": "Entities",
+        "label": "Zombie Night Speed",
+        "choices": {
+          "A": "Walk",
+          "B": "Jog",
+          "C": "Run",
+          "D": "Sprint",
+          "E": "Nightmare"
+        }
+      },
+      {
+        "key": "ZombieFeralMove",
+        "code": "BK",
+        "default": "D",
+        "group": "Entities",
+        "label": "Zombie Feral Speed",
+        "choices": {
+          "A": "Walk",
+          "B": "Jog",
+          "C": "Run",
+          "D": "Sprint",
+          "E": "Nightmare"
+        }
+      },
+      {
+        "key": "ZombieBMMove",
+        "code": "BL",
+        "default": "D",
+        "group": "Entities",
+        "label": "Zombie BM Speed",
+        "choices": {
+          "A": "Walk",
+          "B": "Jog",
+          "C": "Run",
+          "D": "Sprint",
+          "E": "Nightmare"
+        }
+      },
+      {
+        "key": "ZombieFeralSense",
+        "code": "BM",
+        "default": "A",
+        "group": "Entities",
+        "label": "Zombie Feral Sense",
+        "choices": {
+          "A": "Disabled",
+          "B": "Day",
+          "C": "Night",
+          "D": "All"
+        }
+      },
+      {
+        "key": "AISmellMode",
+        "code": "BN",
+        "default": "D",
+        "group": "Entities",
+        "label": "AI Smell Mode",
+        "choices": {
+          "A": "None",
+          "B": "Walk",
+          "C": "Jog",
+          "D": "Run",
+          "E": "Sprint",
+          "F": "Nightmare"
+        }
+      },
+      {
+        "key": "ZombieRageChance",
+        "code": "BP",
+        "default": "B",
+        "group": "Entities",
+        "label": "Zombie Rage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "15%",
+          "C": "30%",
+          "D": "35%",
+          "E": "40%",
+          "F": "50%",
+          "G": "60%",
+          "H": "75%",
+          "I": "90%",
+          "J": "100%"
+        }
+      },
+      {
+        "key": "AllowZombieDigging",
+        "code": "BO",
+        "default": "B",
+        "group": "Entities",
+        "label": "Zombie Digging",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "ZombiesEatAnimals",
+        "code": "BV",
+        "default": "B",
+        "group": "Entities",
+        "label": "Zombies Eat Animals",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "GlobalGSModifier",
+        "code": "CI",
+        "default": "C",
+        "group": "World",
+        "label": "Global Game Stage",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "BiomeGSModifier",
+        "code": "CJ",
+        "default": "C",
+        "group": "World",
+        "label": "Biome Game Stage",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "BiomeProgression",
+        "code": "CD",
+        "default": "B",
+        "group": "World",
+        "label": "Biome Progression",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "TemperatureSurvival",
+        "code": "CE",
+        "default": "B",
+        "group": "World",
+        "label": "Temperature Survival",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "MaxTechType",
+        "code": "CW",
+        "default": "E",
+        "group": "World",
+        "label": "Max Tech Type",
+        "choices": {
+          "A": "None",
+          "B": "Tech 0",
+          "C": "Tech 1",
+          "D": "Tech 2",
+          "E": "Tech 3"
+        }
+      },
+      {
+        "key": "WorkstationsInTheWild",
+        "code": "CV",
+        "default": "A",
+        "group": "World",
+        "label": "Workstations In The Wild",
+        "choices": {
+          "A": "None (0%)",
+          "B": "5%",
+          "C": "10%",
+          "D": "20%",
+          "E": "30%",
+          "F": "40%",
+          "G": "50%",
+          "H": "60%",
+          "I": "70%",
+          "J": "80%",
+          "K": "90%",
+          "L": "100%"
+        }
+      },
+      {
+        "key": "BloodMoonFrequency",
+        "code": "BW",
+        "default": "H",
+        "group": "World",
+        "label": "Blood Moon Frequency",
+        "choices": {
+          "A": "Disabled",
+          "B": "1 Day",
+          "C": "2 Days",
+          "D": "3 Days",
+          "E": "4 Days",
+          "F": "5 Days",
+          "G": "6 Days",
+          "H": "7 Days",
+          "I": "8 Days",
+          "J": "9 Days",
+          "K": "10 Days",
+          "L": "14 Days",
+          "M": "20 Days",
+          "N": "30 Days"
+        }
+      },
+      {
+        "key": "BloodMoonRange",
+        "code": "BX",
+        "default": "A",
+        "group": "World",
+        "label": "Blood Moon Range",
+        "choices": {
+          "A": "0 Days",
+          "B": "1 Day",
+          "C": "2 Days",
+          "D": "3 Days",
+          "E": "4 Days",
+          "F": "7 Days",
+          "G": "10 Days",
+          "H": "14 Days",
+          "I": "20 Days"
+        }
+      },
+      {
+        "key": "BloodMoonEnemyCount",
+        "code": "BZ",
+        "default": "C",
+        "group": "World",
+        "label": "Blood Moon Count",
+        "choices": {
+          "A": "4 Enemies",
+          "B": "6 Enemies",
+          "C": "8 Enemies",
+          "D": "10 Enemies",
+          "E": "12 Enemies",
+          "F": "16 Enemies",
+          "G": "24 Enemies",
+          "H": "32 Enemies",
+          "I": "64 Enemies"
+        }
+      },
+      {
+        "key": "BloodMoonWarning",
+        "code": "BY",
+        "default": "B",
+        "group": "World",
+        "label": "Blood Moon Warning",
+        "choices": {
+          "A": "Disabled",
+          "B": "Morning",
+          "C": "Evening"
+        }
+      },
+      {
+        "key": "AirDropFrequency",
+        "code": "CA",
+        "default": "D",
+        "group": "World",
+        "label": "Air Drops",
+        "choices": {
+          "A": "Disabled",
+          "B": "Every Day",
+          "C": "1-3 Days",
+          "D": "3 Days",
+          "E": "3-7 Days",
+          "F": "7 Days",
+          "G": "1-7 Days"
+        }
+      },
+      {
+        "key": "AirDropRandomTime",
+        "code": "CC",
+        "default": "A",
+        "group": "World",
+        "label": "Air Drop Variance",
+        "choices": {
+          "A": "None",
+          "B": "Morning",
+          "C": "Mid Day",
+          "D": "Evening",
+          "E": "Night",
+          "F": "All Day",
+          "G": "Any"
+        }
+      },
+      {
+        "key": "StormFreq",
+        "code": "CF",
+        "default": "C",
+        "group": "World",
+        "label": "Storm Frequency",
+        "choices": {
+          "A": "None (0%)",
+          "B": "50%",
+          "C": "100%",
+          "D": "150%",
+          "E": "200%",
+          "F": "300%",
+          "G": "400%",
+          "H": "500%"
+        }
+      },
+      {
+        "key": "StormWarning",
+        "code": "CG",
+        "default": "B",
+        "group": "World",
+        "label": "Storm Warning",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "HeatMapSensitivity",
+        "code": "CH",
+        "default": "D",
+        "group": "World",
+        "label": "Heat Map Sensitivity",
+        "choices": {
+          "A": "Disabled (0%)",
+          "B": "Very Low (25%)",
+          "C": "Low (50%)",
+          "D": "Default (100%)",
+          "E": "High (150%)",
+          "F": "Very High (200%)"
+        }
+      },
+      {
+        "key": "DayNightLength",
+        "code": "CO",
+        "default": "F",
+        "group": "World",
+        "label": "24 Hour Cycle",
+        "choices": {
+          "A": "10",
+          "B": "20",
+          "C": "30",
+          "D": "40",
+          "E": "50",
+          "F": "60",
+          "G": "90",
+          "H": "120"
+        }
+      },
+      {
+        "key": "DayLightLength",
+        "code": "CP",
+        "default": "I",
+        "group": "World",
+        "label": "Daylight Length",
+        "choices": {
+          "A": "Always Night",
+          "B": "4",
+          "C": "6",
+          "D": "8",
+          "E": "10",
+          "F": "12",
+          "G": "14",
+          "H": "16",
+          "I": "18",
+          "J": "20",
+          "K": "Always Day"
+        }
+      },
+      {
+        "key": "AirDropMarker",
+        "code": "CB",
+        "default": "B",
+        "group": "World",
+        "label": "Mark Air Drops",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "AllowMap",
+        "code": "CQ",
+        "default": "B",
+        "group": "World",
+        "label": "Allow Map",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "AllowCompass",
+        "code": "CR",
+        "default": "B",
+        "group": "World",
+        "label": "Allow Compass",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "AllowScreenMarkers",
+        "code": "CS",
+        "default": "B",
+        "group": "World",
+        "label": "Allow Screen Markers",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "ShowLocationInfo",
+        "code": "CT",
+        "default": "B",
+        "group": "World",
+        "label": "Show Location Info",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "Name Only"
+        }
+      },
+      {
+        "key": "ShowDayTime",
+        "code": "CU",
+        "default": "B",
+        "group": "World",
+        "label": "Show Day/Time",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "LootMaxTier",
+        "code": "CZ",
+        "default": "A",
+        "group": "Resources",
+        "label": "Max Loot Quality",
+        "choices": {
+          "A": "Default",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6"
+        }
+      },
+      {
+        "key": "GlobalLSModifier",
+        "code": "CK",
+        "default": "C",
+        "group": "Resources",
+        "label": "Global Loot Stage",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "BiomeLSModifier",
+        "code": "CL",
+        "default": "C",
+        "group": "Resources",
+        "label": "Biome Loot Stage",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "POITierLSModifier",
+        "code": "CM",
+        "default": "C",
+        "group": "Resources",
+        "label": "POI Loot Stage",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "LootRespawnDays",
+        "code": "CX",
+        "default": "C",
+        "group": "Resources",
+        "label": "Loot Respawn Days",
+        "choices": {
+          "A": "Disabled",
+          "B": "5",
+          "C": "7",
+          "D": "10",
+          "E": "15",
+          "F": "20",
+          "G": "30",
+          "H": "40",
+          "I": "50"
+        }
+      },
+      {
+        "key": "LootTimer",
+        "code": "CY",
+        "default": "E",
+        "group": "Resources",
+        "label": "Loot Timer",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "LootBagChance",
+        "code": "DM",
+        "default": "H",
+        "group": "Resources",
+        "label": "Loot Bag Drop",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "GlobalLootCount",
+        "code": "DA",
+        "default": "H",
+        "group": "Resources",
+        "label": "Loot Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "FoodLootCount",
+        "code": "DB",
+        "default": "H",
+        "group": "Resources",
+        "label": "Food Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "DrinkLootCount",
+        "code": "DC",
+        "default": "H",
+        "group": "Resources",
+        "label": "Drink Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "MedicalLootCount",
+        "code": "DD",
+        "default": "H",
+        "group": "Resources",
+        "label": "Medical Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "AmmoLootCount",
+        "code": "DE",
+        "default": "H",
+        "group": "Resources",
+        "label": "Ammo Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "ResourceLootCount",
+        "code": "DF",
+        "default": "H",
+        "group": "Resources",
+        "label": "Resource Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "ArmorLootCount",
+        "code": "DG",
+        "default": "H",
+        "group": "Resources",
+        "label": "Armor Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "MeleeLootCount",
+        "code": "DH",
+        "default": "H",
+        "group": "Resources",
+        "label": "Melee Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "RangedLootCount",
+        "code": "DI",
+        "default": "H",
+        "group": "Resources",
+        "label": "Ranged Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "DukesLootCount",
+        "code": "DJ",
+        "default": "H",
+        "group": "Resources",
+        "label": "Currency Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "CraftingMagazinesLootCount",
+        "code": "DK",
+        "default": "H",
+        "group": "Resources",
+        "label": "Magazine Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "BookLootCount",
+        "code": "EH",
+        "default": "H",
+        "group": "Resources",
+        "label": "Book Abundance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "TreasureMapChance",
+        "code": "DL",
+        "default": "H",
+        "group": "Resources",
+        "label": "Treasure Map Chance",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "60%",
+          "E": "70%",
+          "F": "80%",
+          "G": "90%",
+          "H": "100%",
+          "I": "110%",
+          "J": "120%",
+          "K": "130%",
+          "L": "140%",
+          "M": "150%",
+          "N": "200%",
+          "O": "300%"
+        }
+      },
+      {
+        "key": "MiningOutput",
+        "code": "DX",
+        "default": "H",
+        "group": "Resources",
+        "label": "Mining Yield",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "CropOutput",
+        "code": "DN",
+        "default": "H",
+        "group": "Resources",
+        "label": "Crop Yield",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "SeedDropOutput",
+        "code": "DO",
+        "default": "H",
+        "group": "Resources",
+        "label": "Seed Drop",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "HarvestingOutput",
+        "code": "DY",
+        "default": "H",
+        "group": "Resources",
+        "label": "Resource Yield",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "300%",
+          "M": "400%",
+          "N": "500%"
+        }
+      },
+      {
+        "key": "CropGrowthSpeed",
+        "code": "DP",
+        "default": "F",
+        "group": "Resources",
+        "label": "Crop Growth",
+        "choices": {
+          "A": "None (100000%)",
+          "B": "Instant (0%)",
+          "C": "20%",
+          "D": "50%",
+          "E": "75%",
+          "F": "100%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "CraftingProgression",
+        "code": "DS",
+        "default": "B",
+        "group": "Crafting",
+        "label": "Crafting Progression",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "CraftingMaxTier",
+        "code": "DW",
+        "default": "A",
+        "group": "Crafting",
+        "label": "Crafting Max Quality",
+        "choices": {
+          "A": "Default",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6"
+        }
+      },
+      {
+        "key": "PointsPerMagazine",
+        "code": "EL",
+        "default": "B",
+        "group": "Crafting",
+        "label": "Magazine Progress",
+        "choices": {
+          "A": "None",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6",
+          "H": "7"
+        }
+      },
+      {
+        "key": "BackpackCrafting",
+        "code": "DQ",
+        "default": "B",
+        "group": "Crafting",
+        "label": "Backpack Crafting",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "Limited",
+          "D": "Workbench Only"
+        }
+      },
+      {
+        "key": "WorkstationCrafting",
+        "code": "DR",
+        "default": "B",
+        "group": "Crafting",
+        "label": "Workstation Crafting",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "SmeltingType",
+        "code": "EA",
+        "default": "A",
+        "group": "Crafting",
+        "label": "Smelter Type",
+        "choices": {
+          "A": "Smelter",
+          "B": "Recipes"
+        }
+      },
+      {
+        "key": "CraftingTime",
+        "code": "DT",
+        "default": "E",
+        "group": "Crafting",
+        "label": "Crafting Timer",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "CraftingInput",
+        "code": "DU",
+        "default": "E",
+        "group": "Crafting",
+        "label": "Crafting Cost",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "CraftingOutput",
+        "code": "DV",
+        "default": "D",
+        "group": "Crafting",
+        "label": "Crafting Yield",
+        "choices": {
+          "A": "25%",
+          "B": "50%",
+          "C": "75%",
+          "D": "100%",
+          "E": "125%",
+          "F": "150%",
+          "G": "200%",
+          "H": "300%"
+        }
+      },
+      {
+        "key": "ScrappingOutput",
+        "code": "DZ",
+        "default": "E",
+        "group": "Crafting",
+        "label": "Scrapping Yield",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "DewCollectorTime",
+        "code": "EB",
+        "default": "E",
+        "group": "Crafting",
+        "label": "Dew Collector Time",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "DewCollectorOutput",
+        "code": "EC",
+        "default": "A",
+        "group": "Crafting",
+        "label": "Dew Collector Yield",
+        "choices": {
+          "A": "100%",
+          "B": "200%",
+          "C": "300%",
+          "D": "400%",
+          "E": "500%"
+        }
+      },
+      {
+        "key": "DewCollectorInput",
+        "code": "ED",
+        "default": "B",
+        "group": "Crafting",
+        "label": "Dew Collector Input",
+        "choices": {
+          "A": "None (0%)",
+          "B": "100%",
+          "C": "200%",
+          "D": "300%"
+        }
+      },
+      {
+        "key": "ApiaryTime",
+        "code": "EE",
+        "default": "E",
+        "group": "Crafting",
+        "label": "Apiary Time",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "ApiaryOutput",
+        "code": "EF",
+        "default": "A",
+        "group": "Crafting",
+        "label": "Apiary Yield",
+        "choices": {
+          "A": "100%",
+          "B": "200%",
+          "C": "300%",
+          "D": "400%",
+          "E": "500%"
+        }
+      },
+      {
+        "key": "ApiaryInput",
+        "code": "EG",
+        "default": "F",
+        "group": "Crafting",
+        "label": "Apiary Input",
+        "choices": {
+          "A": "None (0%)",
+          "B": "20%",
+          "C": "40%",
+          "D": "60%",
+          "E": "80%",
+          "F": "100%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "ChickenCoopTime",
+        "code": "FW",
+        "default": "E",
+        "group": "Crafting",
+        "label": "Chicken Coop Time",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "ChickenCoopOutput",
+        "code": "FX",
+        "default": "A",
+        "group": "Crafting",
+        "label": "Chicken Coop Yield",
+        "choices": {
+          "A": "100%",
+          "B": "200%",
+          "C": "300%",
+          "D": "400%",
+          "E": "500%"
+        }
+      },
+      {
+        "key": "ChickenCoopInput",
+        "code": "FY",
+        "default": "F",
+        "group": "Crafting",
+        "label": "Chicken Coop Input",
+        "choices": {
+          "A": "None (0%)",
+          "B": "20%",
+          "C": "40%",
+          "D": "60%",
+          "E": "80%",
+          "F": "100%",
+          "G": "150%",
+          "H": "200%",
+          "I": "300%"
+        }
+      },
+      {
+        "key": "FullChickenStressEvent",
+        "code": "GI",
+        "default": "B",
+        "group": "Crafting",
+        "label": "Chicken Stress Event",
+        "choices": {
+          "A": "None",
+          "B": "Random",
+          "C": "Chicken Drop",
+          "D": "Angry Chicken",
+          "E": "Zombie Horde",
+          "F": "Murder Chickens"
+        }
+      },
+      {
+        "key": "ItemDegradation",
+        "code": "AV",
+        "default": "D",
+        "group": "Crafting",
+        "label": "Item Degradation",
+        "choices": {
+          "A": "Disabled (0%)",
+          "B": "Very Low (25%)",
+          "C": "Low (50%)",
+          "D": "Default (100%)",
+          "E": "High (150%)",
+          "F": "Very High (200%)"
+        }
+      },
+      {
+        "key": "RepairTypes",
+        "code": "EJ",
+        "default": "D",
+        "group": "Crafting",
+        "label": "Repair Method",
+        "choices": {
+          "A": "None",
+          "B": "Repair Only",
+          "C": "Combine Only",
+          "D": "Both"
+        }
+      },
+      {
+        "key": "MaxDegradationAmount",
+        "code": "EK",
+        "default": "A",
+        "group": "Crafting",
+        "label": "Repair Degradation",
+        "choices": {
+          "A": "None (0%)",
+          "B": "5%",
+          "C": "10%",
+          "D": "15%",
+          "E": "20%",
+          "F": "25%"
+        }
+      },
+      {
+        "key": "TradersEnabled",
+        "code": "EY",
+        "default": "B",
+        "group": "Traders",
+        "label": "Trading Enabled",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "VendingEnabled",
+        "code": "EZ",
+        "default": "B",
+        "group": "Traders",
+        "label": "Vending Enabled",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "TraderHours",
+        "code": "EX",
+        "default": "A",
+        "group": "Traders",
+        "label": "Trader Hours",
+        "choices": {
+          "A": "Default",
+          "B": "Morning",
+          "C": "Mid Day",
+          "D": "Evening",
+          "E": "Night",
+          "F": "BM Closed",
+          "G": "Always Open"
+        }
+      },
+      {
+        "key": "TraderProtection",
+        "code": "FC",
+        "default": "A",
+        "group": "Traders",
+        "label": "Trader Protection",
+        "choices": {
+          "A": "Yes",
+          "B": "Claimable",
+          "C": "Not Claimable"
+        }
+      },
+      {
+        "key": "TraderDialog",
+        "code": "EW",
+        "default": "B",
+        "group": "Traders",
+        "label": "Trading Dialog",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "GlobalTSModifier",
+        "code": "CN",
+        "default": "C",
+        "group": "Traders",
+        "label": "Global Trader Stage",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "TraderMaxTier",
+        "code": "FG",
+        "default": "A",
+        "group": "Traders",
+        "label": "Trader Max Quality",
+        "choices": {
+          "A": "Default",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6"
+        }
+      },
+      {
+        "key": "TraderItemAbundance",
+        "code": "FE",
+        "default": "C",
+        "group": "Traders",
+        "label": "Trader Item Count",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "VendingItemAbundance",
+        "code": "FI",
+        "default": "C",
+        "group": "Traders",
+        "label": "Vending Item Count",
+        "choices": {
+          "A": "Very Low (25%)",
+          "B": "Low (50%)",
+          "C": "Default (100%)",
+          "D": "High (150%)",
+          "E": "Very High (200%)"
+        }
+      },
+      {
+        "key": "TraderResetInterval",
+        "code": "FD",
+        "default": "A",
+        "group": "Traders",
+        "label": "Trader Reset",
+        "choices": {
+          "A": "Default",
+          "B": "1 Day",
+          "C": "2 Days",
+          "D": "3 Days",
+          "E": "4 Days",
+          "F": "5 Days",
+          "G": "6 Days",
+          "H": "7 Days",
+          "I": "14 Days"
+        }
+      },
+      {
+        "key": "VendingResetInterval",
+        "code": "FH",
+        "default": "A",
+        "group": "Traders",
+        "label": "Vending Reset",
+        "choices": {
+          "A": "Default",
+          "B": "1 Day",
+          "C": "2 Days",
+          "D": "3 Days",
+          "E": "4 Days",
+          "F": "5 Days",
+          "G": "6 Days",
+          "H": "7 Days",
+          "I": "14 Days"
+        }
+      },
+      {
+        "key": "TraderSellPrices",
+        "code": "FA",
+        "default": "E",
+        "group": "Traders",
+        "label": "Sell Price",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "175%",
+          "I": "200%",
+          "J": "300%",
+          "K": "400%"
+        }
+      },
+      {
+        "key": "TraderBuyPrices",
+        "code": "FB",
+        "default": "E",
+        "group": "Traders",
+        "label": "Buy Price",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "50%",
+          "D": "75%",
+          "E": "100%",
+          "F": "125%",
+          "G": "150%",
+          "H": "175%",
+          "I": "200%",
+          "J": "300%",
+          "K": "400%"
+        }
+      },
+      {
+        "key": "TraderBuyLimit",
+        "code": "FF",
+        "default": "D",
+        "group": "Traders",
+        "label": "Trader Buy Limit",
+        "choices": {
+          "A": "None",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6",
+          "H": "7",
+          "I": "8",
+          "J": "9",
+          "K": "10"
+        }
+      },
+      {
+        "key": "ChallengesEnabled",
+        "code": "FJ",
+        "default": "B",
+        "group": "Tasks",
+        "label": "Challenges",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "QuestsEnabled",
+        "code": "EO",
+        "default": "B",
+        "group": "Tasks",
+        "label": "Quests",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "IntroChallengesEnabled",
+        "code": "FK",
+        "default": "B",
+        "group": "Tasks",
+        "label": "Intro Challenges",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "IntroQuestEnabled",
+        "code": "EP",
+        "default": "B",
+        "group": "Tasks",
+        "label": "Intro Quest",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "TraderToTraderQuestsEnabled",
+        "code": "EQ",
+        "default": "B",
+        "group": "Tasks",
+        "label": "Trade Routes",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "BuriedQuestsEnabled",
+        "code": "EU",
+        "default": "B",
+        "group": "Tasks",
+        "label": "Buried Quests",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "POIQuestsEnabled",
+        "code": "EV",
+        "default": "B",
+        "group": "Tasks",
+        "label": "POI Quests",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "QuestsPerTier",
+        "code": "ES",
+        "default": "K",
+        "group": "Tasks",
+        "label": "Quests Per Tier",
+        "choices": {
+          "A": "None",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6",
+          "H": "7",
+          "I": "8",
+          "J": "9",
+          "K": "10",
+          "L": "11",
+          "M": "12",
+          "N": "13",
+          "O": "14",
+          "P": "15"
+        }
+      },
+      {
+        "key": "QuestProgressionDailyLimit",
+        "code": "ET",
+        "default": "E",
+        "group": "Tasks",
+        "label": "Quests Per Day",
+        "choices": {
+          "A": "Unlimited",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6",
+          "H": "7",
+          "I": "8",
+          "J": "9",
+          "K": "10"
+        }
+      },
+      {
+        "key": "StarterSkillPoints",
+        "code": "ER",
+        "default": "E",
+        "group": "Tasks",
+        "label": "Base Skill Points",
+        "choices": {
+          "A": "None",
+          "B": "1",
+          "C": "2",
+          "D": "3",
+          "E": "4",
+          "F": "5",
+          "G": "6",
+          "H": "7",
+          "I": "8",
+          "J": "9",
+          "K": "10"
+        }
+      },
+      {
+        "key": "VehicleFuelUsage",
+        "code": "FL",
+        "default": "H",
+        "group": "Misc",
+        "label": "Vehicle Fuel Usage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "VehicleEntityDamage",
+        "code": "FM",
+        "default": "H",
+        "group": "Misc",
+        "label": "Vehicle Entity Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "VehicleBlockDamage",
+        "code": "FN",
+        "default": "H",
+        "group": "Misc",
+        "label": "Vehicle Block Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "VehicleSelfDamage",
+        "code": "FO",
+        "default": "H",
+        "group": "Misc",
+        "label": "Vehicle Self Damage",
+        "choices": {
+          "A": "None (0%)",
+          "B": "25%",
+          "C": "35%",
+          "D": "50%",
+          "E": "65%",
+          "F": "75%",
+          "G": "85%",
+          "H": "100%",
+          "I": "125%",
+          "J": "150%",
+          "K": "200%",
+          "L": "250%",
+          "M": "300%"
+        }
+      },
+      {
+        "key": "ElectricalOutput",
+        "code": "FP",
+        "default": "D",
+        "group": "Misc",
+        "label": "Electrical Output",
+        "choices": {
+          "A": "25%",
+          "B": "50%",
+          "C": "75%",
+          "D": "100%",
+          "E": "125%",
+          "F": "150%",
+          "G": "200%",
+          "H": "300%"
+        }
+      },
+      {
+        "key": "SillyCelebrate",
+        "code": "FQ",
+        "default": "A",
+        "group": "Misc",
+        "label": "Celebrate Kills",
+        "choices": {
+          "A": "No",
+          "B": "Yes",
+          "C": "Headshot Only"
+        }
+      },
+      {
+        "key": "SillyBigHeads",
+        "code": "FR",
+        "default": "A",
+        "group": "Misc",
+        "label": "Big Heads",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "SillyTinyZombies",
+        "code": "FS",
+        "default": "A",
+        "group": "Misc",
+        "label": "Tiny Zombies",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "SillyLowGravity",
+        "code": "FU",
+        "default": "F",
+        "group": "Misc",
+        "label": "Gravity",
+        "choices": {
+          "A": "50%",
+          "B": "60%",
+          "C": "70%",
+          "D": "80%",
+          "E": "90%",
+          "F": "100%"
+        }
+      },
+      {
+        "key": "SillySounds",
+        "code": "FT",
+        "default": "A",
+        "group": "Misc",
+        "label": "Silly Sounds",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      },
+      {
+        "key": "SillyBlackandWhite",
+        "code": "FV",
+        "default": "A",
+        "group": "Misc",
+        "label": "Black and White",
+        "choices": {
+          "A": "No",
+          "B": "Yes"
+        }
+      }
+    ],
+    "3.3.0": "3.2.0",
+    "3.4.0": "3.2.0"
+  },
+  "presets": [
+    {
+      "label": "Scavenger",
+      "code": "AAAKABKARDBNB"
+    },
+    {
+      "label": "Adventurer",
+      "code": "AAAJABJARFBNC"
+    },
+    {
+      "label": "Nomad",
+      "code": "A"
+    },
+    {
+      "label": "Warrior",
+      "code": "AAAGABGARJ"
+    },
+    {
+      "label": "True Survivalist",
+      "code": "AAAEABEARKBNE"
+    },
+    {
+      "label": "Insane",
+      "code": "AAADABDARLBNF"
+    }
+  ]
+}

@@ -5,6 +5,7 @@ const { Worker } = require("node:worker_threads");
 const { EventEmitter } = require("node:events");
 const crypto = require("node:crypto");
 const C = require("./core.cjs");
+const G = require("./game-options.cjs");
 const { Telnet } = require("./telnet.cjs");
 const A = require("./automation.cjs");
 const delay = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -352,23 +353,31 @@ class Manager extends EventEmitter {
     const s = this.server(id);
     if (s.mode === "remote")
       return { values: s.config, comments: {}, installed: false };
-    const file = (await C.exists(this.configFile(s)))
-      ? this.configFile(s)
-      : path.join(s.directory, "serverconfig.xml");
-    if (!(await C.exists(file)))
-      return { values: s.config, comments: {}, installed: false };
-    const xml = await fs.readFile(file, "utf8");
-    const values = { ...C.parseConfig(xml), ...s.config };
+    const [stock, active, worlds] = await Promise.all([
+      fs
+        .readFile(path.join(s.directory, "serverconfig.xml"), "utf8")
+        .catch(() => ""),
+      fs.readFile(this.configFile(s), "utf8").catch(() => ""),
+      G.availableWorlds(s.directory),
+    ]);
+    const base = stock ? C.parseConfig(stock) : {};
+    const values = G.effectiveConfig(base, {
+      ...(active ? C.parseConfig(active) : {}),
+      ...s.config,
+    });
     const comments = {};
-    for (const m of xml.matchAll(
-      /<property\b[^>]*name="([^"]+)"[^>]*\/>\s*<!--([\s\S]*?)-->/g,
+    for (const m of (stock || active).matchAll(
+      /<property\b[^>]*name="([^"]+)"[^>]*\/>[^\S\r\n]*<!--([\s\S]*?)-->/g,
     ))
       comments[m[1]] = m[2].trim();
+    const sandbox = Object.hasOwn(values, "SandboxCode");
     return {
       values,
       comments,
-      installed: true,
-      sandbox: Object.hasOwn(values, "SandboxCode"),
+      worlds,
+      installed: await C.exists(path.join(s.directory, "7DaysToDieServer.exe")),
+      sandbox,
+      ...(sandbox ? await G.sandboxInfo(s) : {}),
     };
   }
   async importConfig(id, xml) {
@@ -385,15 +394,13 @@ class Manager extends EventEmitter {
   }
   async writeConfig(s) {
     const stock = path.join(s.directory, "serverconfig.xml");
-    let template = await fs.readFile(stock, "utf8").catch(() => "");
-    if (template) {
-      const base = C.parseConfig(template);
-      s.config = { ...base, ...s.config };
-    }
+    const template = await fs.readFile(stock, "utf8").catch(() => "");
+    const base = template ? C.parseConfig(template) : {};
+    s.config = { ...base, ...s.config };
     s.config.UserDataFolder = path.join(s.directory, "userdata");
     s.config.TerminalWindowEnabled = "false";
     await fs.mkdir(s.config.UserDataFolder, { recursive: true });
-    const xml = C.buildConfig(s.config, template);
+    const xml = C.buildConfig(G.effectiveConfig(base, s.config), template);
     C.parseConfig(xml);
     await C.atomic(this.configFile(s), xml);
     await this.store.save();
@@ -477,14 +484,26 @@ class Manager extends EventEmitter {
       const s = this.server(id),
         r = this.rt(id);
       if (s.mode !== "local") C.fail("localOnly");
-      if (r.child || r.client.ready) C.fail("stopFirst");
+      if (r.child || r.client.ready || r.countdown) C.fail("stopFirst");
       C.validateServer(s, this.state.servers);
       if (
         this.state.branches.length &&
         !this.state.branches.some((b) => b.id === s.branch)
       )
         C.fail("branchUnavailable");
-      if (await C.exists(this.configFile(s))) await this.backupInternal(id);
+      const target = await fs.realpath(s.directory).catch(() => s.directory);
+      for (const other of this.state.servers) {
+        if (other.id === id || other.mode !== "local") continue;
+        const directory = await fs
+          .realpath(other.directory)
+          .catch(() => other.directory);
+        if (C.overlap(target, directory)) C.fail("sharedDirectory");
+      }
+      if (
+        (await C.exists(path.join(s.directory, "7DaysToDieServer.exe"))) ||
+        (await C.exists(this.configFile(s)))
+      )
+        await this.backupInternal(id);
       const out = await this.runSteam(
         [
           "+force_install_dir",
@@ -505,10 +524,6 @@ class Manager extends EventEmitter {
         !(await C.exists(path.join(s.directory, "7DaysToDieServer.exe")))
       )
         C.fail("steamFailed", out.slice(-3000));
-      const stock = C.parseConfig(
-        await fs.readFile(path.join(s.directory, "serverconfig.xml"), "utf8"),
-      );
-      s.config = { ...stock, ...s.config };
       await this.writeConfig(s);
       await this.store.save();
       this.log(id, "success", "294420 · " + s.branch);
@@ -875,7 +890,9 @@ class Manager extends EventEmitter {
       await this.worker({
         op: "backup",
         userdata: path.join(s.directory, "userdata"),
-        config: this.configFile(s),
+        config: (await C.exists(this.configFile(s)))
+          ? this.configFile(s)
+          : path.join(s.directory, "serverconfig.xml"),
         mods: path.join(s.directory, "Mods"),
         profile: this.store.codec.encode(s),
         output: file,

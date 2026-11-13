@@ -546,3 +546,37 @@ for (const line of deletionWords.trim().split("\n")) {
   for (let i = 0; i < languages.length; i++)
     window.I18N[languages[i]][key] = values[i] || values[1] || key;
 }
+const gameOptionsWords = `
+chooseWorld|Seleccionar mapa|Select a map|Selecionar mapa|选择地图|マップを選択|Выбрать карту
+randomWorld|Mundo aleatorio|Random world|Mundo aleatório|随机世界|ランダムワールド|Случайный мир
+worldChoicesHelp|Elige un mapa detectado, escribe el nombre de un mapa personalizado o usa RWG para generar uno.|Choose a detected map, type a custom map name, or use RWG to generate a world.|Escolha um mapa detectado, digite um nome personalizado ou use RWG para gerar um mundo.|选择已检测到的地图，输入自定义地图名称，或使用 RWG 生成世界。|検出されたマップを選ぶか、カスタムマップ名を入力するか、RWGで生成します。|Выберите найденную карту, введите имя своей карты или используйте RWG для генерации.
+managedOption|El gestor fija este valor para este servidor.|The manager sets this value for this server.|O gerenciador define este valor para este servidor.|管理器为此服务器设置此值。|マネージャーがこのサーバーの値を設定します。|Менеджер задаёт это значение для сервера.
+sandboxEditorHelp|Estos controles generan el código Sandbox de esta versión. Guarda los cambios y vuelve a iniciar el servidor para aplicarlos.|These controls generate the Sandbox code for this version. Save changes and start the server again to apply them.|Estes controles geram o código Sandbox desta versão. Salve e inicie o servidor novamente para aplicar.|这些控件生成此版本的沙盒代码。保存后重新启动服务器以应用。|このバージョンのサンドボックスコードを生成します。保存後にサーバーを起動して適用します。|Эти настройки формируют код песочницы для этой версии. Сохраните изменения и снова запустите сервер.
+difficultyPreset|Preajuste de dificultad|Difficulty preset|Predefinição de dificuldade|难度预设|難易度プリセット|Предустановка сложности
+chooseDifficulty|Elige un preajuste|Choose a preset|Escolha uma predefinição|选择预设|プリセットを選択|Выберите предустановку
+difficultyHelp|Elegir un preajuste sustituye los ajustes Sandbox del formulario.|Choosing a preset replaces the Sandbox settings in this form.|Escolher uma predefinição substitui os ajustes Sandbox do formulário.|选择预设将替换此表单中的沙盒设置。|プリセットを選ぶとフォームのサンドボックス設定が置き換わります。|Выбор предустановки заменит настройки песочницы в форме.
+walkSpeed|Caminar|Walk|Andar|步行|歩く|Шаг
+jogSpeed|Trotar|Jog|Trocar|慢跑|ジョギング|Трусца
+runSpeed|Correr|Run|Correr|跑步|走る|Бег
+sprintSpeed|Esprintar|Sprint|Disparar|冲刺|全力疾走|Спринт
+nightmareSpeed|Pesadilla|Nightmare|Pesadelo|噩梦|悪夢|Кошмар
+Scavenger|Carroñero|Scavenger|Catador|拾荒者|スカベンジャー|Мусорщик
+Adventurer|Aventurero|Adventurer|Aventureiro|冒险家|冒険者|Искатель приключений
+Nomad|Nómada|Nomad|Nômade|游牧者|ノーマッド|Кочевник
+Warrior|Guerrero|Warrior|Guerreiro|战士|戦士|Воин
+True Survivalist|Superviviente|True Survivalist|Sobrevivente|真正的幸存者|真のサバイバー|Выживальщик
+Insane|Demente|Insane|Insano|疯狂|狂気|Безумие
+sandboxPlayer|Jugador|Player|Jogador|玩家|プレイヤー|Игрок
+sandboxEntities|Zombis y criaturas|Entities|Zumbis e criaturas|僵尸和生物|ゾンビと生物|Зомби и существа
+sandboxWorld|Mundo|World|Mundo|世界|ワールド|Мир
+sandboxResources|Recursos|Resources|Recursos|资源|資源|Ресурсы
+sandboxCrafting|Fabricación|Crafting|Fabricação|制作|クラフト|Крафт
+sandboxTraders|Comerciantes|Traders|Comerciantes|商人|トレーダー|Торговцы
+sandboxTasks|Misiones|Tasks|Missões|任务|クエスト|Задания
+sandboxMisc|Otros|Misc|Outros|其他|その他|Прочее
+`;
+for (const line of gameOptionsWords.trim().split("\n")) {
+  const [key, ...values] = line.split("|");
+  for (let i = 0; i < languages.length; i++)
+    window.I18N[languages[i]][key] = values[i];
+}

@@ -1442,3 +1442,24 @@ dialog::backdrop {
   display: block;
   margin-top: 10px;
 }
+
+.card-footer {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+#native-form .notice,
+.sandbox-group {
+  grid-column: 1 / -1;
+}
+.sandbox-group {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+.sandbox-group summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.sandbox-group > .form-grid {
+  margin-top: 16px;
+}

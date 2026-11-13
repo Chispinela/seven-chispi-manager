@@ -72,3 +72,13 @@ Purple dark/light themes; English, Spanish, Portuguese, Simplified Chinese, Japa
 Normal data is stored in `%APPDATA%\Seven Chispi Manager`. Credentials in profiles use Windows DPAPI and cannot simply be moved to another Windows user. Game XML and backup files can contain the passwords required by the game; protect access to them. Runtime data is not published in the source repository.
 
 Technical references: the installed official server configuration and executable; Valve's [SteamCMD documentation](https://developer.valvesoftware.com/wiki/SteamCMD); [Steam GetPlayerBans API](https://partner.steamgames.com/doc/webapi/ISteamUser#GetPlayerBans).
+
+## Version-specific settings and worlds
+
+Each local server card has its own **Install / update** action. The confirmation identifies the server, Steam branch and installation folder. Stop that server first. SteamCMD handles one installation at a time. Existing installations are backed up before an update.
+
+**Configuration → Game options** lists the XML settings from the installed server template and allows editing the native properties that the manager does not own. On pre-3.0 releases, difficulty and zombie movement are individual XML settings. On recognized 3.0–3.4 builds, the grouped Sandbox controls generate the appropriate code. The code field remains available for other builds. Version 3.4.0 offers the six difficulty presets and 165 individual rules. Select a difficulty preset before adjusting individual rules.
+
+The map selector reads base and generated maps with map metadata from the selected server. Navezgane and RWG are available alongside the detected maps. Custom map names can be entered directly. Pregen filenames and availability depend on the installed branch. Changing the map can start a different world.
+
+Compatibility sources: [The Fun Pimps V3.0 release notes](https://7daystodie.com/v3-0-dead-hot-summer-release-notes/), the installed dedicated-server XML and Steam build manifest, and [7DTD Sandbox versioned option tables](https://7dtdsandbox.com/). The catalogue stores option identifiers, value indexes and labels for interoperability. Difficulty codes were read from the 3.4.0 dedicated-server preset table.
