@@ -6,7 +6,7 @@
 
 > **Built with AI assistance.** ChatGPT and Codex were used extensively to develop the application, write and review code, prepare documentation, and assist with testing. The original logo was generated with OpenAI ImageGen. This is an independent community project; AI assistance does not guarantee correctness. See [AI and artwork disclosure](docs/BRAND.md) and [validation](docs/VALIDATION.md).
 
-[Download Windows installer](https://github.com/Chispinela/seven-chispi-manager/releases/download/v1.0.5/Seven-Chispi-Manager-Setup-1.0.5.exe) · [Portable edition](https://github.com/Chispinela/seven-chispi-manager/releases/download/v1.0.5/Seven-Chispi-Manager-Portable-1.0.5.exe) · [All releases](https://github.com/Chispinela/seven-chispi-manager/releases)
+[Download Windows installer](https://github.com/Chispinela/seven-chispi-manager/releases/download/v1.0.6/Seven-Chispi-Manager-Setup-1.0.6.exe) · [Portable edition](https://github.com/Chispinela/seven-chispi-manager/releases/download/v1.0.6/Seven-Chispi-Manager-Portable-1.0.6.exe) · [All releases](https://github.com/Chispinela/seven-chispi-manager/releases)
 
 ## What you can do
 
@@ -98,7 +98,7 @@ The repository includes application code, six translations, original artwork, te
 
 ## Compatibility and project status
 
-Local hosting, simultaneous servers, Telnet, world loading, saving, shutdown, and backups were exercised with the official **V3.4.0 b9** dedicated server. The current automated suite contains **52 tests**. External Discord/SMTP accounts, VAC keys, mod APIs, Internet connectivity, and real-client multiplayer have not all been validated. See [features and requirements](docs/FEATURES.md), [event scripting](docs/EVENTS.md), and [validation details](docs/VALIDATION.md) before relying on an integration.
+Local hosting, simultaneous servers, Telnet, world loading, saving, shutdown, and backups were exercised with the official **V3.4.0 b9** dedicated server. The current automated suite contains **53 tests**. External Discord/SMTP accounts, VAC keys, mod APIs, Internet connectivity, and real-client multiplayer have not all been validated. See [features and requirements](docs/FEATURES.md), [event scripting](docs/EVENTS.md), and [validation details](docs/VALIDATION.md) before relying on an integration.
 
 This project has its own event language and JSON formats. It is not a drop-in RATScript interpreter or a RAT database importer. RAT executables, libraries, artwork, and source are not redistributed.
 

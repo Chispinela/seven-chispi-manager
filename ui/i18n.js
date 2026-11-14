@@ -580,3 +580,13 @@ for (const line of gameOptionsWords.trim().split("\n")) {
   for (let i = 0; i < languages.length; i++)
     window.I18N[languages[i]][key] = values[i];
 }
+
+for (const [language, label] of Object.entries({
+  es: "Pega el código copiado del juego. Guarda los cambios con el servidor detenido. Se aplicará al iniciarlo con una versión compatible.",
+  en: "Paste the code copied from the game. Save with the server stopped. The code applies when you start a compatible version.",
+  pt: "Cole o código copiado do jogo. Salve com o servidor parado. O código será aplicado ao iniciar uma versão compatível.",
+  zh: "粘贴从游戏复制的代码。停止服务器后保存，启动兼容版本时生效。",
+  ja: "ゲームからコピーしたコードを貼り付けてください。サーバーを停止して保存すると、対応バージョンの起動時に適用されます。",
+  ru: "Вставьте код из игры. Сохраните при остановленном сервере. Код применяется при запуске совместимой версии.",
+}))
+  window.I18N[language].sandboxPasteHelp = label;

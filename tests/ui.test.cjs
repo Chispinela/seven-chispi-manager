@@ -318,3 +318,15 @@ test("Sandbox controls save a code without losing other rules and the world pick
   assert.equal(saved.SandboxCode, "AAAJBIEZZB");
   assert.equal(saved.GameWorld, "Pregen08k01");
 });
+
+test("the main configuration saves a pasted SandboxCode for the selected profile", async (t) => {
+  const { w, calls, click } = await view(t);
+  await click("[data-open]");
+  await click('[data-nav="config"]');
+  const code = w.document.querySelector("#sandbox-direct");
+  assert.ok(code);
+  code.value = "  AAAJBIE\n";
+  w.document.querySelector("#config-form").dispatchEvent(new w.Event("submit", { bubbles: true, cancelable: true }));
+  await tick();
+  assert.equal(calls.findLast(({action}) => action === "saveServer").args.server.config.SandboxCode, "AAAJBIE");
+});

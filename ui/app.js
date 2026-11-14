@@ -604,7 +604,11 @@ async function renderConfig(token) {
   const c = data.values;
   let html = "";
   if (tab === "basics") {
-    html = `<form id="config-form" class="panel"><div class="form-grid">${field("name", "name", s.name)}${field("config.ServerName", "name", c.ServerName)}${field("host", "host", s.host)}${field("config.ServerPort", "gamePort", c.ServerPort, "number")}${field("config.ServerMaxPlayerCount", "maxPlayers", c.ServerMaxPlayerCount, "number")}${field("config.ServerPassword", "password", c.ServerPassword, "password")}${worldField("config.GameWorld", c.GameWorld, data.worlds)}${field("config.GameName", "worldName", c.GameName)}${field("config.WorldGenSeed", "seed", c.WorldGenSeed)}${field("config.WorldGenSize", "worldSize", c.WorldGenSize, "number")}${field("config.TelnetPort", "telnetPort", c.TelnetPort, "number")}${field("config.TelnetPassword", "telnetPassword", c.TelnetPassword, "password")}${field("config.WebDashboardPort", "webPort", c.WebDashboardPort, "number")}${select(
+    const sandbox =
+      s.mode === "local" && (data.sandbox || !data.installed)
+        ? `<div class="form-field full"><label for="sandbox-direct">SandboxCode</label><textarea id="sandbox-direct" name="config.SandboxCode" rows="2" spellcheck="false">${esc(c.SandboxCode ?? "")}</textarea><p class="help">${t("sandboxPasteHelp")}</p></div>`
+        : "";
+    html = `<form id="config-form" class="panel"><div class="form-grid">${sandbox}${field("name", "name", s.name)}${field("config.ServerName", "name", c.ServerName)}${field("host", "host", s.host)}${field("config.ServerPort", "gamePort", c.ServerPort, "number")}${field("config.ServerMaxPlayerCount", "maxPlayers", c.ServerMaxPlayerCount, "number")}${field("config.ServerPassword", "password", c.ServerPassword, "password")}${worldField("config.GameWorld", c.GameWorld, data.worlds)}${field("config.GameName", "worldName", c.GameName)}${field("config.WorldGenSeed", "seed", c.WorldGenSeed)}${field("config.WorldGenSize", "worldSize", c.WorldGenSize, "number")}${field("config.TelnetPort", "telnetPort", c.TelnetPort, "number")}${field("config.TelnetPassword", "telnetPassword", c.TelnetPassword, "password")}${field("config.WebDashboardPort", "webPort", c.WebDashboardPort, "number")}${select(
       "config.ServerVisibility",
       "visibility",
       [
@@ -1346,6 +1350,11 @@ document.addEventListener("submit", async (e) => {
         const config = { ...s.config };
         for (const [k, value] of Object.entries(v))
           if (k.startsWith("config.")) config[k.slice(7)] = value;
+        if (Object.hasOwn(config, "SandboxCode")) {
+          config.SandboxCode = config.SandboxCode.trim();
+          if (!config.SandboxCode && !Object.hasOwn(s.config, "SandboxCode"))
+            delete config.SandboxCode;
+        }
         config.WebDashboardEnabled = String(v.webEnabled);
         config.EnableMapRendering = String(v.mapEnabled);
         await saveCurrent({
